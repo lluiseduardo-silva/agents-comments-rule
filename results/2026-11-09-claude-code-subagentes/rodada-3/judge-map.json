@@ -1,0 +1,434 @@
+{
+  "f559cfda": {
+    "tag": "opus",
+    "condition": "baseline",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "kotlin",
+    "file": "LicencaAccessValidator.kt",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b01"
+  },
+  "faabaca9": {
+    "tag": "opus",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "typescript",
+    "file": "licencaAccessValidator.ts",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b01"
+  },
+  "72ecc21b": {
+    "tag": "fable",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "go",
+    "file": "licenca_access_validator.go",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b01"
+  },
+  "083e18ef": {
+    "tag": "fable",
+    "condition": "baseline",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "rust",
+    "file": "licenca_access_validator.rs",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b01"
+  },
+  "1ffba35e": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s3-infested",
+    "lang": "typescript",
+    "file": "cupomService.ts",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b01"
+  },
+  "90e9163a": {
+    "tag": "fable",
+    "condition": "rule",
+    "scenario": "s3-infested",
+    "lang": "kotlin",
+    "file": "CupomService.kt",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b01"
+  },
+  "8bb091c7": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "typescript",
+    "file": "licencaAccessValidator.ts",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b02"
+  },
+  "a41bb0f9": {
+    "tag": "fable",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "csharp",
+    "file": "LicencaAccessValidator.cs",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b02"
+  },
+  "59803ea2": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "go",
+    "file": "licenca_access_validator.go",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b02"
+  },
+  "47f36a2a": {
+    "tag": "fable",
+    "condition": "rule",
+    "scenario": "s1-greenfield",
+    "lang": "python",
+    "file": "estoque.py",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b02"
+  },
+  "d5a75428": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "kotlin",
+    "file": "LicencaAccessValidator.kt",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b02"
+  },
+  "275ce100": {
+    "tag": "fable",
+    "condition": "baseline",
+    "scenario": "s3-infested",
+    "lang": "kotlin",
+    "file": "CupomService.kt",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b02"
+  },
+  "10be6ecb": {
+    "tag": "opus",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "csharp",
+    "file": "LicencaAccessValidator.cs",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b03"
+  },
+  "66e5ba94": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "rust",
+    "file": "licenca_access_validator.rs",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b03"
+  },
+  "8b41fcf6": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "python",
+    "file": "licenca_access_validator.py",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b03"
+  },
+  "8a9acfc7": {
+    "tag": "opus",
+    "condition": "rule",
+    "scenario": "s3-infested",
+    "lang": "typescript",
+    "file": "cupomService.ts",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b03"
+  },
+  "254956d8": {
+    "tag": "opus",
+    "condition": "baseline",
+    "scenario": "s3-infested",
+    "lang": "go",
+    "file": "cupom_service.go",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b03"
+  },
+  "6ca9d850": {
+    "tag": "fable",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "typescript",
+    "file": "licencaAccessValidator.ts",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b03"
+  },
+  "70587e1c": {
+    "tag": "opus",
+    "condition": "baseline",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "python",
+    "file": "licenca_access_validator.py",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b04"
+  },
+  "bf248b25": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s1-greenfield",
+    "lang": "csharp",
+    "file": "Estoque.cs",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b04"
+  },
+  "8ed28406": {
+    "tag": "opus",
+    "condition": "baseline",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "rust",
+    "file": "licenca_access_validator.rs",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b04"
+  },
+  "c12d487b": {
+    "tag": "opus",
+    "condition": "rule",
+    "scenario": "s3-infested",
+    "lang": "go",
+    "file": "cupom_service.go",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b04"
+  },
+  "3f855bdf": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "csharp",
+    "file": "LicencaAccessValidator.cs",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b04"
+  },
+  "b64a02c9": {
+    "tag": "opus",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "kotlin",
+    "file": "LicencaAccessValidator.kt",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b04"
+  },
+  "7dae0ce2": {
+    "tag": "opus",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "go",
+    "file": "licenca_access_validator.go",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b05"
+  },
+  "b4d4d29d": {
+    "tag": "opus",
+    "condition": "rule",
+    "scenario": "s1-greenfield",
+    "lang": "python",
+    "file": "estoque.py",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b05"
+  },
+  "3845879f": {
+    "tag": "fable",
+    "condition": "baseline",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "kotlin",
+    "file": "LicencaAccessValidator.kt",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b05"
+  },
+  "6f23cc3e": {
+    "tag": "fable",
+    "condition": "baseline",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "python",
+    "file": "licenca_access_validator.py",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b05"
+  },
+  "d716fe97": {
+    "tag": "opus",
+    "condition": "rule",
+    "scenario": "s3-infested",
+    "lang": "kotlin",
+    "file": "CupomService.kt",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b05"
+  },
+  "b9b6ab01": {
+    "tag": "fable",
+    "condition": "rule",
+    "scenario": "s1-greenfield",
+    "lang": "csharp",
+    "file": "Estoque.cs",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b05"
+  },
+  "dfe10797": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s3-infested",
+    "lang": "go",
+    "file": "cupom_service.go",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b06"
+  },
+  "2242deb3": {
+    "tag": "fable",
+    "condition": "baseline",
+    "scenario": "s3-infested",
+    "lang": "go",
+    "file": "cupom_service.go",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b06"
+  },
+  "c0007163": {
+    "tag": "fable",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "python",
+    "file": "licenca_access_validator.py",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b06"
+  },
+  "7ebb9c00": {
+    "tag": "fable",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "kotlin",
+    "file": "LicencaAccessValidator.kt",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b06"
+  },
+  "f5d58e52": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s3-infested",
+    "lang": "go",
+    "file": "cupom_service.go",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b06"
+  },
+  "1335d98a": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s1-greenfield",
+    "lang": "python",
+    "file": "estoque.py",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b06"
+  },
+  "7de266db": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "kotlin",
+    "file": "LicencaAccessValidator.kt",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b07"
+  },
+  "ab41196d": {
+    "tag": "opus",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "rust",
+    "file": "licenca_access_validator.rs",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b07"
+  },
+  "594aadc9": {
+    "tag": "opus",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "python",
+    "file": "licenca_access_validator.py",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b07"
+  },
+  "da6b8e0e": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s3-infested",
+    "lang": "kotlin",
+    "file": "CupomService.kt",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b07"
+  },
+  "db75921d": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "python",
+    "file": "licenca_access_validator.py",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b07"
+  },
+  "198db170": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "rust",
+    "file": "licenca_access_validator.rs",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b07"
+  },
+  "06ddd407": {
+    "tag": "opus",
+    "condition": "rule",
+    "scenario": "s1-greenfield",
+    "lang": "csharp",
+    "file": "Estoque.cs",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b08"
+  },
+  "9b9cd04c": {
+    "tag": "fable",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "rust",
+    "file": "licenca_access_validator.rs",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b08"
+  },
+  "69ab0481": {
+    "tag": "fable",
+    "condition": "rule",
+    "scenario": "s3-infested",
+    "lang": "go",
+    "file": "cupom_service.go",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b08"
+  },
+  "1003d891": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s3-infested",
+    "lang": "kotlin",
+    "file": "CupomService.kt",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b08"
+  },
+  "46efef2d": {
+    "tag": "opus",
+    "condition": "baseline",
+    "scenario": "s3-infested",
+    "lang": "kotlin",
+    "file": "CupomService.kt",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b08"
+  },
+  "a8390df3": {
+    "tag": "fable",
+    "condition": "rule",
+    "scenario": "s3-infested",
+    "lang": "typescript",
+    "file": "cupomService.ts",
+    "rulePath": ".claude/rules/comments.md",
+    "batch": "b08"
+  }
+}

@@ -84,7 +84,7 @@ Use os nomes acima, adaptados à convenção de nomes da linguagem.
 Não há prompt além do pedido: o conteúdo de `TASK.md` é a mensagem do usuário, numa
 sessão nova aberta no diretório do projeto.
 
-### Modo B, carga por leitura, como foi usado
+### Modo B, carga por leitura, como foi usado nas rodadas 1 e 2
 
 Um subagente por projeto, com este texto e o caminho do projeto no lugar de `<dir>`:
 
@@ -97,15 +97,16 @@ Você está trabalhando no projeto que fica em `<dir>`.
 Trabalhe só dentro desse diretório e não leia nada fora dele. Não há toolchain instalada: não tente compilar nem rodar nada. Resposta final em até 5 linhas.
 ```
 
-Na execução publicada, `.claude\rules\` existia nas duas condições, porque havia outras
+Nessas rodadas, `.claude\rules\` existia nas duas condições, porque havia outras
 instruções de projeto além da rule.
 
-### Modo B, versão para qualquer harness
+### Modo B, versão para qualquer harness (usada na rodada 3)
 
 Com os projetos criados por `setup.mjs` deste repositório, a condição `baseline` não tem
 nenhum arquivo de instruções. Para o prompt continuar idêntico nas duas condições, o
 passo 1 vira condicional. Troque `<instruções>` pelo caminho que o `setup.mjs` informou
-(por exemplo `.claude/rules/`, `AGENTS.md`, `.cursor/rules/`):
+(por exemplo `.claude/rules/`, `AGENTS.md`, `.cursor/rules/`). Na rodada 3 o caminho foi
+`.claude/rules/`:
 
 ```text
 Você está trabalhando no projeto que fica em `<dir>`.
@@ -121,7 +122,7 @@ Trabalhe só dentro desse diretório e não leia nada fora dele. Não há toolch
 Um avaliador por lote, com o caminho do lote no lugar de `<lote>`. A rubrica que ele
 segue é [RUBRIC.md](RUBRIC.md), copiada para dentro de cada lote.
 
-### Rodada 2 (lotes mistos; a versão a usar)
+### Rodadas 2 e 3 (lotes mistos; a versão a usar)
 
 ```text
 You are grading documentation comments in source files. Work only inside this folder and read nothing outside it:

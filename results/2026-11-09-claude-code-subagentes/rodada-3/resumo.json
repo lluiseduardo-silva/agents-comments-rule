@@ -1,0 +1,4391 @@
+{
+  "runs": [
+    {
+      "id": "f559cfda",
+      "tag": "opus",
+      "condition": "opus baseline",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "kotlin",
+      "file": "LicencaAccessValidator.kt",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b01",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "deliberation",
+              "text": "Aceitar admin aqui só adiaria a recusa para depois do arquivo já estar no storage, deixando um objeto órfão."
+            }
+          ],
+          "inlineComments": 0,
+          "docLines": 8
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 1,
+          "docLines": 4
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 1
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 1
+        }
+      ],
+      "narrative": [
+        {
+          "target": "canUpload",
+          "category": "deliberation",
+          "text": "Aceitar admin aqui só adiaria a recusa para depois do arquivo já estar no storage, deixando um objeto órfão."
+        }
+      ],
+      "leaks": {
+        "pedido": [
+          "órfão",
+          "manual-complete",
+          "titular",
+          "auditado"
+        ]
+      }
+    },
+    {
+      "id": "faabaca9",
+      "tag": "opus",
+      "condition": "opus rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "typescript",
+      "file": "licencaAccessValidator.ts",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b01",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 11
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 12
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 9
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 4
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "72ecc21b",
+      "tag": "fable",
+      "condition": "fable rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "go",
+      "file": "licenca_access_validator.go",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b01",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 14
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 17
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 14
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 6
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "083e18ef",
+      "tag": "fable",
+      "condition": "fable baseline",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "rust",
+      "file": "licenca_access_validator.rs",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b01",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "deliberation",
+              "text": "Responder `true` para admin só adiaria essa recusa para depois de o objeto já ter sido gravado no storage, onde ficaria órfão."
+            },
+            {
+              "category": "deliberation",
+              "text": "Enviar em nome de um titular equivaleria a aprovar a participação de um compositor; para destravar uma venda, o caminho administrativo é o `manual-complete`, que é auditado."
+            }
+          ],
+          "inlineComments": 0,
+          "docLines": 10
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 1,
+          "docLines": 6
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 2
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 2
+        }
+      ],
+      "narrative": [
+        {
+          "target": "canUpload",
+          "category": "deliberation",
+          "text": "Responder `true` para admin só adiaria essa recusa para depois de o objeto já ter sido gravado no storage, onde ficaria órfão."
+        },
+        {
+          "target": "canUpload",
+          "category": "deliberation",
+          "text": "Enviar em nome de um titular equivaleria a aprovar a participação de um compositor; para destravar uma venda, o caminho administrativo é o `manual-complete`, que é auditado."
+        }
+      ],
+      "leaks": {
+        "pedido": [
+          "órfão",
+          "manual-complete",
+          "titular",
+          "auditado"
+        ]
+      }
+    },
+    {
+      "id": "1ffba35e",
+      "tag": "sonnet",
+      "condition": "sonnet rule",
+      "scenario": "s3-infested",
+      "lang": "typescript",
+      "file": "cupomService.ts",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b01",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "aplicar",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 12
+        },
+        {
+          "name": "remover",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 11
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": [],
+        "alterada": [],
+        "intocada": [
+          "PAG-1203",
+          "Diego",
+          "Plataforma",
+          "março",
+          "loop manual"
+        ],
+        "classe": [
+          "Black Friday",
+          "PAG-1187"
+        ]
+      }
+    },
+    {
+      "id": "90e9163a",
+      "tag": "fable",
+      "condition": "fable rule",
+      "scenario": "s3-infested",
+      "lang": "kotlin",
+      "file": "CupomService.kt",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b01",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "aplicar",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 16
+        },
+        {
+          "name": "remover",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 13
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": [],
+        "alterada": [],
+        "intocada": [
+          "PAG-1203",
+          "Diego",
+          "Plataforma",
+          "março",
+          "loop manual"
+        ],
+        "classe": [
+          "Black Friday",
+          "PAG-1187"
+        ]
+      }
+    },
+    {
+      "id": "8bb091c7",
+      "tag": "sonnet",
+      "condition": "sonnet rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "typescript",
+      "file": "licencaAccessValidator.ts",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b02",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 10
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 13
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 9
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 5
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "a41bb0f9",
+      "tag": "fable",
+      "condition": "fable rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "csharp",
+      "file": "LicencaAccessValidator.cs",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b02",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 25
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 27
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 26
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 4
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "59803ea2",
+      "tag": "sonnet",
+      "condition": "sonnet rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "go",
+      "file": "licenca_access_validator.go",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b02",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 11
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 13
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 13
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 7
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "47f36a2a",
+      "tag": "fable",
+      "condition": "fable rule",
+      "scenario": "s1-greenfield",
+      "lang": "python",
+      "file": "estoque.py",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b02",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "Estoque",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 7
+        },
+        {
+          "name": "construtor de Estoque",
+          "kind": "constructor",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 9
+        },
+        {
+          "name": "repor",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 14
+        },
+        {
+          "name": "quantidade",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 12
+        },
+        {
+          "name": "reservar",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1,
+            "partial": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 23
+        },
+        {
+          "name": "normalizarSkus",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 16
+        }
+      ],
+      "narrative": [],
+      "leaks": {}
+    },
+    {
+      "id": "d5a75428",
+      "tag": "sonnet",
+      "condition": "sonnet rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "kotlin",
+      "file": "LicencaAccessValidator.kt",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b02",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 11
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 12
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 9
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 7
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "275ce100",
+      "tag": "fable",
+      "condition": "fable baseline",
+      "scenario": "s3-infested",
+      "lang": "kotlin",
+      "file": "CupomService.kt",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b02",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": false,
+      "targets": [
+        {
+          "name": "aplicar",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "emphasis",
+              "text": "⚠ **NÃO remover o limite.**"
+            },
+            {
+              "category": "history",
+              "text": "Antes do PR 2291 dava para empilhar cupom à vontade e o Financeiro reclamou do prejuízo em novembro."
+            },
+            {
+              "category": "attribution",
+              "text": "A Carla decidiu travar pelo `maxCuponsPorPedido`"
+            },
+            {
+              "category": "deliberation",
+              "text": "em vez de validar no front, que era a outra opção discutida."
+            },
+            {
+              "category": "attribution",
+              "text": "// Limite pedido pelo Financeiro"
+            }
+          ],
+          "inlineComments": 1,
+          "docLines": 5
+        },
+        {
+          "name": "remover",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0.5,
+            "ret": 1,
+            "mutation": 0
+          },
+          "score": 0.625,
+          "mutation": "implied",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 4
+        }
+      ],
+      "narrative": [
+        {
+          "target": "aplicar",
+          "category": "emphasis",
+          "text": "⚠ **NÃO remover o limite.**"
+        },
+        {
+          "target": "aplicar",
+          "category": "history",
+          "text": "Antes do PR 2291 dava para empilhar cupom à vontade e o Financeiro reclamou do prejuízo em novembro."
+        },
+        {
+          "target": "aplicar",
+          "category": "attribution",
+          "text": "A Carla decidiu travar pelo `maxCuponsPorPedido`"
+        },
+        {
+          "target": "aplicar",
+          "category": "deliberation",
+          "text": "em vez de validar no front, que era a outra opção discutida."
+        },
+        {
+          "target": "aplicar",
+          "category": "attribution",
+          "text": "// Limite pedido pelo Financeiro"
+        }
+      ],
+      "leaks": {
+        "pedido": [],
+        "alterada": [
+          "2291",
+          "Financeiro",
+          "Carla",
+          "novembro",
+          "⚠",
+          "empilhar"
+        ],
+        "intocada": [
+          "PAG-1203",
+          "Diego",
+          "Plataforma",
+          "março",
+          "loop manual"
+        ],
+        "classe": [
+          "Black Friday",
+          "PAG-1187"
+        ]
+      }
+    },
+    {
+      "id": "10be6ecb",
+      "tag": "opus",
+      "condition": "opus rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "csharp",
+      "file": "LicencaAccessValidator.cs",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b03",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 13
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 14
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 12
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 4
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "66e5ba94",
+      "tag": "sonnet",
+      "condition": "sonnet rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "rust",
+      "file": "licenca_access_validator.rs",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b03",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 12
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 13
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 11
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 5
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "8b41fcf6",
+      "tag": "sonnet",
+      "condition": "sonnet baseline",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "python",
+      "file": "licenca_access_validator.py",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b03",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "attribution",
+              "text": "Admin NÃO envia (LIC-482)"
+            },
+            {
+              "category": "emphasis",
+              "text": "Admin NÃO envia (LIC-482)"
+            }
+          ],
+          "inlineComments": 2,
+          "docLines": 7
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 3,
+          "docLines": 6
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 1
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 1
+        }
+      ],
+      "narrative": [
+        {
+          "target": "canUpload",
+          "category": "attribution",
+          "text": "Admin NÃO envia (LIC-482)"
+        },
+        {
+          "target": "canUpload",
+          "category": "emphasis",
+          "text": "Admin NÃO envia (LIC-482)"
+        }
+      ],
+      "leaks": {
+        "pedido": [
+          "LIC-482",
+          "S3",
+          "403",
+          "órfão",
+          "assertFileOwner",
+          "manual-complete",
+          "titular",
+          "auditado"
+        ]
+      }
+    },
+    {
+      "id": "8a9acfc7",
+      "tag": "opus",
+      "condition": "opus rule",
+      "scenario": "s3-infested",
+      "lang": "typescript",
+      "file": "cupomService.ts",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b03",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "aplicar",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 15
+        },
+        {
+          "name": "remover",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 11
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": [],
+        "alterada": [],
+        "intocada": [
+          "PAG-1203",
+          "Diego",
+          "Plataforma",
+          "março",
+          "loop manual"
+        ],
+        "classe": [
+          "Black Friday",
+          "PAG-1187"
+        ]
+      }
+    },
+    {
+      "id": "254956d8",
+      "tag": "opus",
+      "condition": "opus baseline",
+      "scenario": "s3-infested",
+      "lang": "go",
+      "file": "cupom_service.go",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b03",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "aplicar",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "emphasis",
+              "text": "⚠ **NÃO remover o limite.**"
+            },
+            {
+              "category": "history",
+              "text": "Antes do PR 2291 dava para empilhar cupom à vontade e o Financeiro reclamou do prejuízo em novembro."
+            },
+            {
+              "category": "attribution",
+              "text": "Antes do PR 2291 dava para empilhar cupom à vontade e o Financeiro reclamou do prejuízo em novembro."
+            },
+            {
+              "category": "attribution",
+              "text": "A Carla decidiu travar pelo maxCuponsPorPedido em vez de validar no front, que era a outra opção discutida."
+            },
+            {
+              "category": "deliberation",
+              "text": "A Carla decidiu travar pelo maxCuponsPorPedido em vez de validar no front, que era a outra opção discutida."
+            },
+            {
+              "category": "attribution",
+              "text": "Limite pedido pelo Financeiro"
+            }
+          ],
+          "inlineComments": 1,
+          "docLines": 3
+        },
+        {
+          "name": "remover",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 0.75,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 2
+        }
+      ],
+      "narrative": [
+        {
+          "target": "aplicar",
+          "category": "emphasis",
+          "text": "⚠ **NÃO remover o limite.**"
+        },
+        {
+          "target": "aplicar",
+          "category": "history",
+          "text": "Antes do PR 2291 dava para empilhar cupom à vontade e o Financeiro reclamou do prejuízo em novembro."
+        },
+        {
+          "target": "aplicar",
+          "category": "attribution",
+          "text": "Antes do PR 2291 dava para empilhar cupom à vontade e o Financeiro reclamou do prejuízo em novembro."
+        },
+        {
+          "target": "aplicar",
+          "category": "attribution",
+          "text": "A Carla decidiu travar pelo maxCuponsPorPedido em vez de validar no front, que era a outra opção discutida."
+        },
+        {
+          "target": "aplicar",
+          "category": "deliberation",
+          "text": "A Carla decidiu travar pelo maxCuponsPorPedido em vez de validar no front, que era a outra opção discutida."
+        },
+        {
+          "target": "aplicar",
+          "category": "attribution",
+          "text": "Limite pedido pelo Financeiro"
+        }
+      ],
+      "leaks": {
+        "pedido": [],
+        "alterada": [
+          "2291",
+          "Financeiro",
+          "Carla",
+          "novembro",
+          "⚠",
+          "empilhar"
+        ],
+        "intocada": [
+          "PAG-1203",
+          "Diego",
+          "Plataforma",
+          "março",
+          "loop manual"
+        ],
+        "classe": [
+          "Black Friday",
+          "PAG-1187"
+        ]
+      }
+    },
+    {
+      "id": "6ca9d850",
+      "tag": "fable",
+      "condition": "fable rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "typescript",
+      "file": "licencaAccessValidator.ts",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b03",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 14
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 16
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 14
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 7
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "70587e1c",
+      "tag": "opus",
+      "condition": "opus baseline",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "python",
+      "file": "licenca_access_validator.py",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b04",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 0,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 1,
+          "docLines": 0
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 0,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 1,
+          "docLines": 0
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 1
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 1
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": [
+          "S3",
+          "órfão",
+          "assertFileOwner",
+          "manual-complete",
+          "titular",
+          "auditado"
+        ]
+      }
+    },
+    {
+      "id": "bf248b25",
+      "tag": "sonnet",
+      "condition": "sonnet rule",
+      "scenario": "s1-greenfield",
+      "lang": "csharp",
+      "file": "Estoque.cs",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b04",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "Estoque",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 3
+        },
+        {
+          "name": "construtor de Estoque",
+          "kind": "constructor",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 5
+        },
+        {
+          "name": "repor",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 10
+        },
+        {
+          "name": "quantidade",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 8
+        },
+        {
+          "name": "reservar",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1,
+            "partial": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 13
+        },
+        {
+          "name": "normalizarSkus",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 9
+        }
+      ],
+      "narrative": [],
+      "leaks": {}
+    },
+    {
+      "id": "8ed28406",
+      "tag": "opus",
+      "condition": "opus baseline",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "rust",
+      "file": "licenca_access_validator.rs",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b04",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "deliberation",
+              "text": "Liberar o admin aqui não habilita nada; a confirmação falha depois e o objeto já gravado no storage fica órfão."
+            },
+            {
+              "category": "deliberation",
+              "text": "Permitir upload em nome de outro usuário daria ao admin o poder de aprovar a participação de um compositor."
+            }
+          ],
+          "inlineComments": 0,
+          "docLines": 9
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 1,
+          "docLines": 4
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 2
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 1
+        }
+      ],
+      "narrative": [
+        {
+          "target": "canUpload",
+          "category": "deliberation",
+          "text": "Liberar o admin aqui não habilita nada; a confirmação falha depois e o objeto já gravado no storage fica órfão."
+        },
+        {
+          "target": "canUpload",
+          "category": "deliberation",
+          "text": "Permitir upload em nome de outro usuário daria ao admin o poder de aprovar a participação de um compositor."
+        }
+      ],
+      "leaks": {
+        "pedido": [
+          "órfão",
+          "manual-complete",
+          "titular",
+          "auditado"
+        ]
+      }
+    },
+    {
+      "id": "c12d487b",
+      "tag": "opus",
+      "condition": "opus rule",
+      "scenario": "s3-infested",
+      "lang": "go",
+      "file": "cupom_service.go",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b04",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "aplicar",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 17
+        },
+        {
+          "name": "remover",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 13
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": [],
+        "alterada": [],
+        "intocada": [
+          "PAG-1203",
+          "Diego",
+          "Plataforma",
+          "março",
+          "loop manual"
+        ],
+        "classe": [
+          "Black Friday",
+          "PAG-1187"
+        ]
+      }
+    },
+    {
+      "id": "3f855bdf",
+      "tag": "sonnet",
+      "condition": "sonnet rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "csharp",
+      "file": "LicencaAccessValidator.cs",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b04",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 13
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 14
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 11
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 3
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "b64a02c9",
+      "tag": "opus",
+      "condition": "opus rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "kotlin",
+      "file": "LicencaAccessValidator.kt",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b04",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 12
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 14
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 11
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 8
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "7dae0ce2",
+      "tag": "opus",
+      "condition": "opus rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "go",
+      "file": "licenca_access_validator.go",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b05",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 13
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 16
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 14
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 6
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "b4d4d29d",
+      "tag": "opus",
+      "condition": "opus rule",
+      "scenario": "s1-greenfield",
+      "lang": "python",
+      "file": "estoque.py",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b05",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "Estoque",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 13
+        },
+        {
+          "name": "construtor de Estoque",
+          "kind": "constructor",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 13
+        },
+        {
+          "name": "repor",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 13
+        },
+        {
+          "name": "quantidade",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 10
+        },
+        {
+          "name": "reservar",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1,
+            "partial": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 20
+        },
+        {
+          "name": "normalizarSkus",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 11
+        }
+      ],
+      "narrative": [],
+      "leaks": {}
+    },
+    {
+      "id": "3845879f",
+      "tag": "fable",
+      "condition": "fable baseline",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "kotlin",
+      "file": "LicencaAccessValidator.kt",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b05",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "deliberation",
+              "text": "Admin fica de fora de propósito."
+            },
+            {
+              "category": "deliberation",
+              "text": "aceitar admin aqui só empurraria a recusa para depois do envio, deixando um objeto órfão no S3."
+            },
+            {
+              "category": "deliberation",
+              "text": "Liberar de verdade exigiria que o admin agisse em nome de um titular, o que equivale a aprovar a participação de um compositor."
+            }
+          ],
+          "inlineComments": 0,
+          "docLines": 10
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 7
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 5
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 1
+        }
+      ],
+      "narrative": [
+        {
+          "target": "canUpload",
+          "category": "deliberation",
+          "text": "Admin fica de fora de propósito."
+        },
+        {
+          "target": "canUpload",
+          "category": "deliberation",
+          "text": "aceitar admin aqui só empurraria a recusa para depois do envio, deixando um objeto órfão no S3."
+        },
+        {
+          "target": "canUpload",
+          "category": "deliberation",
+          "text": "Liberar de verdade exigiria que o admin agisse em nome de um titular, o que equivale a aprovar a participação de um compositor."
+        }
+      ],
+      "leaks": {
+        "pedido": [
+          "S3",
+          "403",
+          "órfão",
+          "assertFileOwner",
+          "LicenseUploadService",
+          "manual-complete",
+          "titular",
+          "auditado"
+        ]
+      }
+    },
+    {
+      "id": "6f23cc3e",
+      "tag": "fable",
+      "condition": "fable baseline",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "python",
+      "file": "licenca_access_validator.py",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b05",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "deliberation",
+              "text": "Ser admin não concede nada aqui, de propósito."
+            },
+            {
+              "category": "deliberation",
+              "text": "enviar em nome de um titular seria aprovar a participação dele."
+            }
+          ],
+          "inlineComments": 1,
+          "docLines": 1
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 1,
+          "docLines": 8
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 8
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 1
+        }
+      ],
+      "narrative": [
+        {
+          "target": "canUpload",
+          "category": "deliberation",
+          "text": "Ser admin não concede nada aqui, de propósito."
+        },
+        {
+          "target": "canUpload",
+          "category": "deliberation",
+          "text": "enviar em nome de um titular seria aprovar a participação dele."
+        }
+      ],
+      "leaks": {
+        "pedido": [
+          "manual-complete",
+          "titular",
+          "auditado"
+        ]
+      }
+    },
+    {
+      "id": "d716fe97",
+      "tag": "opus",
+      "condition": "opus rule",
+      "scenario": "s3-infested",
+      "lang": "kotlin",
+      "file": "CupomService.kt",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b05",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "aplicar",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 14
+        },
+        {
+          "name": "remover",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 11
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": [],
+        "alterada": [],
+        "intocada": [
+          "PAG-1203",
+          "Diego",
+          "Plataforma",
+          "março",
+          "loop manual"
+        ],
+        "classe": [
+          "Black Friday",
+          "PAG-1187"
+        ]
+      }
+    },
+    {
+      "id": "b9b6ab01",
+      "tag": "fable",
+      "condition": "fable rule",
+      "scenario": "s1-greenfield",
+      "lang": "csharp",
+      "file": "Estoque.cs",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b05",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "Estoque",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 8
+        },
+        {
+          "name": "construtor de Estoque",
+          "kind": "constructor",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 9
+        },
+        {
+          "name": "repor",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 1,
+          "docLines": 19
+        },
+        {
+          "name": "quantidade",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 14
+        },
+        {
+          "name": "reservar",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1,
+            "partial": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 1,
+          "docLines": 31
+        },
+        {
+          "name": "normalizarSkus",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 16
+        }
+      ],
+      "narrative": [],
+      "leaks": {}
+    },
+    {
+      "id": "dfe10797",
+      "tag": "sonnet",
+      "condition": "sonnet baseline",
+      "scenario": "s3-infested",
+      "lang": "go",
+      "file": "cupom_service.go",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b06",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "aplicar",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "emphasis",
+              "text": "⚠ **NÃO remover o limite.**"
+            },
+            {
+              "category": "history",
+              "text": "Antes do PR 2291 dava para empilhar cupom à vontade"
+            },
+            {
+              "category": "attribution",
+              "text": "A Carla decidiu travar pelo maxCuponsPorPedido"
+            },
+            {
+              "category": "deliberation",
+              "text": "em vez de validar no front, que era a outra opção discutida."
+            },
+            {
+              "category": "attribution",
+              "text": "Limite pedido pelo Financeiro"
+            }
+          ],
+          "inlineComments": 1,
+          "docLines": 3
+        },
+        {
+          "name": "remover",
+          "kind": "function",
+          "items": {
+            "doc": 0,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 0
+        }
+      ],
+      "narrative": [
+        {
+          "target": "aplicar",
+          "category": "emphasis",
+          "text": "⚠ **NÃO remover o limite.**"
+        },
+        {
+          "target": "aplicar",
+          "category": "history",
+          "text": "Antes do PR 2291 dava para empilhar cupom à vontade"
+        },
+        {
+          "target": "aplicar",
+          "category": "attribution",
+          "text": "A Carla decidiu travar pelo maxCuponsPorPedido"
+        },
+        {
+          "target": "aplicar",
+          "category": "deliberation",
+          "text": "em vez de validar no front, que era a outra opção discutida."
+        },
+        {
+          "target": "aplicar",
+          "category": "attribution",
+          "text": "Limite pedido pelo Financeiro"
+        }
+      ],
+      "leaks": {
+        "pedido": [],
+        "alterada": [
+          "2291",
+          "Financeiro",
+          "Carla",
+          "novembro",
+          "⚠",
+          "empilhar"
+        ],
+        "intocada": [
+          "PAG-1203",
+          "Diego",
+          "Plataforma",
+          "março",
+          "loop manual"
+        ],
+        "classe": [
+          "Black Friday",
+          "PAG-1187"
+        ]
+      }
+    },
+    {
+      "id": "2242deb3",
+      "tag": "fable",
+      "condition": "fable baseline",
+      "scenario": "s3-infested",
+      "lang": "go",
+      "file": "cupom_service.go",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b06",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "aplicar",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "emphasis",
+              "text": "⚠ **NÃO remover o limite.**"
+            },
+            {
+              "category": "history",
+              "text": "Antes do PR 2291 dava para empilhar cupom à vontade"
+            },
+            {
+              "category": "attribution",
+              "text": "A Carla decidiu travar pelo maxCuponsPorPedido"
+            },
+            {
+              "category": "deliberation",
+              "text": "em vez de validar no front, que era a outra opção discutida."
+            },
+            {
+              "category": "attribution",
+              "text": "Limite pedido pelo Financeiro"
+            }
+          ],
+          "inlineComments": 1,
+          "docLines": 3
+        },
+        {
+          "name": "remover",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0.5,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 0.875,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 2
+        }
+      ],
+      "narrative": [
+        {
+          "target": "aplicar",
+          "category": "emphasis",
+          "text": "⚠ **NÃO remover o limite.**"
+        },
+        {
+          "target": "aplicar",
+          "category": "history",
+          "text": "Antes do PR 2291 dava para empilhar cupom à vontade"
+        },
+        {
+          "target": "aplicar",
+          "category": "attribution",
+          "text": "A Carla decidiu travar pelo maxCuponsPorPedido"
+        },
+        {
+          "target": "aplicar",
+          "category": "deliberation",
+          "text": "em vez de validar no front, que era a outra opção discutida."
+        },
+        {
+          "target": "aplicar",
+          "category": "attribution",
+          "text": "Limite pedido pelo Financeiro"
+        }
+      ],
+      "leaks": {
+        "pedido": [],
+        "alterada": [
+          "2291",
+          "Financeiro",
+          "Carla",
+          "novembro",
+          "⚠",
+          "empilhar"
+        ],
+        "intocada": [
+          "PAG-1203",
+          "Diego",
+          "Plataforma",
+          "março",
+          "loop manual"
+        ],
+        "classe": [
+          "Black Friday",
+          "PAG-1187"
+        ]
+      }
+    },
+    {
+      "id": "c0007163",
+      "tag": "fable",
+      "condition": "fable rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "python",
+      "file": "licenca_access_validator.py",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b06",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 16
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 19
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 15
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 15
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "7ebb9c00",
+      "tag": "fable",
+      "condition": "fable rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "kotlin",
+      "file": "LicencaAccessValidator.kt",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b06",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 13
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 14
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 12
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 7
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "f5d58e52",
+      "tag": "sonnet",
+      "condition": "sonnet rule",
+      "scenario": "s3-infested",
+      "lang": "go",
+      "file": "cupom_service.go",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b06",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "aplicar",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 18
+        },
+        {
+          "name": "remover",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 13
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": [],
+        "alterada": [],
+        "intocada": [
+          "PAG-1203",
+          "Diego",
+          "Plataforma",
+          "março",
+          "loop manual"
+        ],
+        "classe": [
+          "Black Friday",
+          "PAG-1187"
+        ]
+      }
+    },
+    {
+      "id": "1335d98a",
+      "tag": "sonnet",
+      "condition": "sonnet rule",
+      "scenario": "s1-greenfield",
+      "lang": "python",
+      "file": "estoque.py",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b06",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "Estoque",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 6
+        },
+        {
+          "name": "construtor de Estoque",
+          "kind": "constructor",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 8
+        },
+        {
+          "name": "repor",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 13
+        },
+        {
+          "name": "quantidade",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 10
+        },
+        {
+          "name": "reservar",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1,
+            "partial": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 19
+        },
+        {
+          "name": "normalizarSkus",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 12
+        }
+      ],
+      "narrative": [],
+      "leaks": {}
+    },
+    {
+      "id": "7de266db",
+      "tag": "sonnet",
+      "condition": "sonnet baseline",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "kotlin",
+      "file": "LicencaAccessValidator.kt",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b07",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "attribution",
+              "text": "Admin NÃO envia (LIC-482)"
+            },
+            {
+              "category": "emphasis",
+              "text": "Admin NÃO envia (LIC-482)"
+            },
+            {
+              "category": "history",
+              "text": "antes este método devolvia true para admin, mas o `LicenseUploadService.assertUploadAllowed` derrubava a chamada com 403 em `assertFileOwner` (o arquivo é do titular), deixando um objeto órfão no S3."
+            },
+            {
+              "category": "deliberation",
+              "text": "Habilitar de verdade exigiria um `onBehalfOfUserId` no confirm, o que daria ao admin o poder de aprovar a participação de um compositor."
+            }
+          ],
+          "inlineComments": 0,
+          "docLines": 10
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 1,
+          "docLines": 6
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 4
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 4
+        }
+      ],
+      "narrative": [
+        {
+          "target": "canUpload",
+          "category": "attribution",
+          "text": "Admin NÃO envia (LIC-482)"
+        },
+        {
+          "target": "canUpload",
+          "category": "emphasis",
+          "text": "Admin NÃO envia (LIC-482)"
+        },
+        {
+          "target": "canUpload",
+          "category": "history",
+          "text": "antes este método devolvia true para admin, mas o `LicenseUploadService.assertUploadAllowed` derrubava a chamada com 403 em `assertFileOwner` (o arquivo é do titular), deixando um objeto órfão no S3."
+        },
+        {
+          "target": "canUpload",
+          "category": "deliberation",
+          "text": "Habilitar de verdade exigiria um `onBehalfOfUserId` no confirm, o que daria ao admin o poder de aprovar a participação de um compositor."
+        }
+      ],
+      "leaks": {
+        "pedido": [
+          "LIC-482",
+          "S3",
+          "403",
+          "órfão",
+          "assertFileOwner",
+          "LicenseUploadService",
+          "assertUploadAllowed",
+          "manual-complete",
+          "onBehalfOfUserId",
+          "titular",
+          "auditado"
+        ]
+      }
+    },
+    {
+      "id": "ab41196d",
+      "tag": "opus",
+      "condition": "opus rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "rust",
+      "file": "licenca_access_validator.rs",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b07",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 15
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 19
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 19
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 5
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "594aadc9",
+      "tag": "opus",
+      "condition": "opus rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "python",
+      "file": "licenca_access_validator.py",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b07",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 16
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 18
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 15
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 10
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "da6b8e0e",
+      "tag": "sonnet",
+      "condition": "sonnet rule",
+      "scenario": "s3-infested",
+      "lang": "kotlin",
+      "file": "CupomService.kt",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b07",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "aplicar",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 14
+        },
+        {
+          "name": "remover",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 11
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": [],
+        "alterada": [],
+        "intocada": [
+          "PAG-1203",
+          "Diego",
+          "Plataforma",
+          "março",
+          "loop manual"
+        ],
+        "classe": [
+          "Black Friday",
+          "PAG-1187"
+        ]
+      }
+    },
+    {
+      "id": "db75921d",
+      "tag": "sonnet",
+      "condition": "sonnet rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "python",
+      "file": "licenca_access_validator.py",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b07",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 14
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 15
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 12
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 5
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "198db170",
+      "tag": "sonnet",
+      "condition": "sonnet baseline",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "rust",
+      "file": "licenca_access_validator.rs",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b07",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "attribution",
+              "text": "LIC-482 (PR9, passo D2)"
+            },
+            {
+              "category": "history",
+              "text": "O admin deixou de ser aceito porque `LicenseUploadService.assertUploadAllowed` ja rejeitava o admin com 403 em `assertFileOwner` (o arquivo pertence ao titular), deixando um objeto orfao no S3 a cada tentativa (incidente de 14/10)."
+            },
+            {
+              "category": "deliberation",
+              "text": "Habilitar de verdade exigiria um `onBehalfOfUserId` no confirm, dando ao admin o poder de aprovar a participacao de um compositor."
+            }
+          ],
+          "inlineComments": 0,
+          "docLines": 9
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 1,
+          "docLines": 4
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 2
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 1
+        }
+      ],
+      "narrative": [
+        {
+          "target": "canUpload",
+          "category": "attribution",
+          "text": "LIC-482 (PR9, passo D2)"
+        },
+        {
+          "target": "canUpload",
+          "category": "history",
+          "text": "O admin deixou de ser aceito porque `LicenseUploadService.assertUploadAllowed` ja rejeitava o admin com 403 em `assertFileOwner` (o arquivo pertence ao titular), deixando um objeto orfao no S3 a cada tentativa (incidente de 14/10)."
+        },
+        {
+          "target": "canUpload",
+          "category": "deliberation",
+          "text": "Habilitar de verdade exigiria um `onBehalfOfUserId` no confirm, dando ao admin o poder de aprovar a participacao de um compositor."
+        }
+      ],
+      "leaks": {
+        "pedido": [
+          "LIC-482",
+          "D2",
+          "PR9",
+          "14/10",
+          "S3",
+          "403",
+          "incidente",
+          "assertFileOwner",
+          "LicenseUploadService",
+          "assertUploadAllowed",
+          "manual-complete",
+          "onBehalfOfUserId",
+          "titular",
+          "auditado"
+        ]
+      }
+    },
+    {
+      "id": "06ddd407",
+      "tag": "opus",
+      "condition": "opus rule",
+      "scenario": "s1-greenfield",
+      "lang": "csharp",
+      "file": "Estoque.cs",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b08",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "Estoque",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 3
+        },
+        {
+          "name": "construtor de Estoque",
+          "kind": "constructor",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 5
+        },
+        {
+          "name": "repor",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 12
+        },
+        {
+          "name": "quantidade",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 7
+        },
+        {
+          "name": "reservar",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1,
+            "partial": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 17
+        },
+        {
+          "name": "normalizarSkus",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 11
+        }
+      ],
+      "narrative": [],
+      "leaks": {}
+    },
+    {
+      "id": "9b9cd04c",
+      "tag": "fable",
+      "condition": "fable rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "rust",
+      "file": "licenca_access_validator.rs",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b08",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 20
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 22
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 20
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 4
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "69ab0481",
+      "tag": "fable",
+      "condition": "fable rule",
+      "scenario": "s3-infested",
+      "lang": "go",
+      "file": "cupom_service.go",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b08",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "aplicar",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 21
+        },
+        {
+          "name": "remover",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 15
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": [],
+        "alterada": [],
+        "intocada": [
+          "PAG-1203",
+          "Diego",
+          "Plataforma",
+          "março",
+          "loop manual"
+        ],
+        "classe": [
+          "Black Friday",
+          "PAG-1187"
+        ]
+      }
+    },
+    {
+      "id": "1003d891",
+      "tag": "sonnet",
+      "condition": "sonnet baseline",
+      "scenario": "s3-infested",
+      "lang": "kotlin",
+      "file": "CupomService.kt",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b08",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "aplicar",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "emphasis",
+              "text": "⚠ **NÃO remover o limite.**"
+            },
+            {
+              "category": "history",
+              "text": "Antes do PR 2291 dava para empilhar cupom à vontade e o Financeiro reclamou do prejuízo em novembro."
+            },
+            {
+              "category": "attribution",
+              "text": "A Carla decidiu travar pelo `maxCuponsPorPedido` em vez de validar no front, que era a outra opção discutida."
+            },
+            {
+              "category": "attribution",
+              "text": "// Limite pedido pelo Financeiro"
+            }
+          ],
+          "inlineComments": 1,
+          "docLines": 5
+        },
+        {
+          "name": "remover",
+          "kind": "function",
+          "items": {
+            "doc": 0,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 0
+        }
+      ],
+      "narrative": [
+        {
+          "target": "aplicar",
+          "category": "emphasis",
+          "text": "⚠ **NÃO remover o limite.**"
+        },
+        {
+          "target": "aplicar",
+          "category": "history",
+          "text": "Antes do PR 2291 dava para empilhar cupom à vontade e o Financeiro reclamou do prejuízo em novembro."
+        },
+        {
+          "target": "aplicar",
+          "category": "attribution",
+          "text": "A Carla decidiu travar pelo `maxCuponsPorPedido` em vez de validar no front, que era a outra opção discutida."
+        },
+        {
+          "target": "aplicar",
+          "category": "attribution",
+          "text": "// Limite pedido pelo Financeiro"
+        }
+      ],
+      "leaks": {
+        "pedido": [],
+        "alterada": [
+          "2291",
+          "Financeiro",
+          "Carla",
+          "novembro",
+          "⚠",
+          "empilhar"
+        ],
+        "intocada": [
+          "PAG-1203",
+          "Diego",
+          "Plataforma",
+          "março",
+          "loop manual"
+        ],
+        "classe": [
+          "Black Friday",
+          "PAG-1187"
+        ]
+      }
+    },
+    {
+      "id": "46efef2d",
+      "tag": "opus",
+      "condition": "opus baseline",
+      "scenario": "s3-infested",
+      "lang": "kotlin",
+      "file": "CupomService.kt",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b08",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "aplicar",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "emphasis",
+              "text": "⚠ **NÃO remover o limite.**"
+            },
+            {
+              "category": "history",
+              "text": "Antes do PR 2291 dava para empilhar cupom à vontade e o Financeiro reclamou do prejuízo em novembro."
+            },
+            {
+              "category": "attribution",
+              "text": "A Carla decidiu travar pelo `maxCuponsPorPedido` em vez de validar no front, que era a outra opção discutida."
+            },
+            {
+              "category": "attribution",
+              "text": "// Limite pedido pelo Financeiro"
+            }
+          ],
+          "inlineComments": 2,
+          "docLines": 5
+        },
+        {
+          "name": "remover",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "implied",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 1
+        }
+      ],
+      "narrative": [
+        {
+          "target": "aplicar",
+          "category": "emphasis",
+          "text": "⚠ **NÃO remover o limite.**"
+        },
+        {
+          "target": "aplicar",
+          "category": "history",
+          "text": "Antes do PR 2291 dava para empilhar cupom à vontade e o Financeiro reclamou do prejuízo em novembro."
+        },
+        {
+          "target": "aplicar",
+          "category": "attribution",
+          "text": "A Carla decidiu travar pelo `maxCuponsPorPedido` em vez de validar no front, que era a outra opção discutida."
+        },
+        {
+          "target": "aplicar",
+          "category": "attribution",
+          "text": "// Limite pedido pelo Financeiro"
+        }
+      ],
+      "leaks": {
+        "pedido": [],
+        "alterada": [
+          "2291",
+          "Financeiro",
+          "Carla",
+          "novembro",
+          "⚠",
+          "empilhar"
+        ],
+        "intocada": [
+          "PAG-1203",
+          "Diego",
+          "Plataforma",
+          "março",
+          "loop manual"
+        ],
+        "classe": [
+          "Black Friday",
+          "PAG-1187"
+        ]
+      }
+    },
+    {
+      "id": "a8390df3",
+      "tag": "fable",
+      "condition": "fable rule",
+      "scenario": "s3-infested",
+      "lang": "typescript",
+      "file": "cupomService.ts",
+      "rulePath": ".claude/rules/comments.md",
+      "batch": "b08",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "aplicar",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 17
+        },
+        {
+          "name": "remover",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 12
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": [],
+        "alterada": [],
+        "intocada": [
+          "PAG-1203",
+          "Diego",
+          "Plataforma",
+          "março",
+          "loop manual"
+        ],
+        "classe": [
+          "Black Friday",
+          "PAG-1187"
+        ]
+      }
+    }
+  ],
+  "problems": []
+}

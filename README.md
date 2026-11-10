@@ -131,10 +131,10 @@ edite a seção "Form" depois de instalar.
 
 ## Evidência
 
-72 execuções em Kotlin, Rust, TypeScript, Python, Go e C#, metade sem a rule, com três
-modelos da família Claude rodando como subagentes do Claude Code. Avaliação cega por
-rubrica, mais uma checagem determinística de nomes, tickets e datas plantados nos
-pedidos.
+120 execuções em Kotlin, Rust, TypeScript, Python, Go e C#, 48 sem a rule e 72 com
+ela, com três modelos da família Claude rodando como subagentes do Claude Code.
+Avaliação cega por rubrica, mais uma checagem determinística de nomes, tickets e datas
+plantados nos pedidos.
 
 | Rodada | Condição | Execuções | Contrato completo | Mutação explícita | Execuções com história do pedido no código |
 |---|---|---|---|---|---|
@@ -142,19 +142,28 @@ pedidos.
 | 1 (Sonnet) | com a rule | 18 | 100% | 100% | 0 |
 | 2 (Sonnet, Opus, Fable) | sem a rule | 15 | 33% a 50% | 0% | 15 |
 | 2 (Sonnet, Opus, Fable) | com a rule | 21 | 100% | 100% | 0 |
+| 3 (Sonnet, Opus, Fable) | sem instrução nenhuma | 15 | 41% a 56% | 0% a 8% | 9 |
+| 3 (Sonnet, Opus, Fable) | só a rule | 33 | 100% | 100% | 0 |
+
+Nas rodadas 1 e 2 a rule foi medida dentro do pacote de regras de onde ela saiu, com
+outras duas instruções de projeto presentes nas duas condições. Na rodada 3 ela foi
+medida sozinha, contra um projeto vazio: é a configuração que este repositório instala.
+Nessa rodada, as 9 execuções com história no código são as 9 do cenário que traz
+história no pedido; as outras 6 são do cenário de arquivo já comentado, em que a
+narrativa existente foi mantida.
+
+Com a rule, nenhuma das 72 execuções teve falha de contrato ou narrativa, em 288
+declarações avaliadas.
 
 Ficha completa, tabelas por linguagem e por cenário, todos os arquivos gerados e as
 notas do avaliador: [results/2026-11-09-claude-code-subagentes/](results/2026-11-09-claude-code-subagentes/README.md).
 
 O que esses números **não** provam:
 
-- As rules foram lidas pelo agente no começo da tarefa, por instrução, e não carregadas
-  pelo harness. O texto estava mais fresco do que estaria numa sessão longa.
+- A rule foi lida pelo agente no começo da tarefa, por instrução, e não carregada pelo
+  harness. O texto estava mais fresco do que estaria numa sessão longa.
 - As tarefas são curtas e de um arquivo só.
 - Há uma execução por combinação de modelo, cenário e linguagem.
-- Nas duas condições havia outras duas instruções de projeto, sem relação com
-  comentários, que não fazem parte deste repositório. A rule sozinha ainda não foi
-  medida.
 - Só uma família de modelos e um harness.
 
 ## Testar em outro harness ou modelo

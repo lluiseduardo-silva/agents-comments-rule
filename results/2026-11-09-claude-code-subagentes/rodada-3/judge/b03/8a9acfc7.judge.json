@@ -1,0 +1,37 @@
+{
+  "id": "8a9acfc7",
+  "prose_language": "pt",
+  "idiomatic_format": true,
+  "targets": [
+    {
+      "name": "aplicar",
+      "found": true,
+      "has_doc": true,
+      "summary_states_behavior": true,
+      "params_documented": 2,
+      "return_documented": false,
+      "errors_documented": 3,
+      "mutation": "explicit",
+      "mutation_complete": true,
+      "partial_failure_documented": false,
+      "narrative": [],
+      "inline_comments": 0,
+      "doc_lines": 15
+    },
+    {
+      "name": "remover",
+      "found": true,
+      "has_doc": true,
+      "summary_states_behavior": true,
+      "params_documented": 2,
+      "return_documented": true,
+      "errors_documented": 0,
+      "mutation": "explicit",
+      "mutation_complete": true,
+      "partial_failure_documented": false,
+      "narrative": [],
+      "inline_comments": 0,
+      "doc_lines": 11
+    }
+  ]
+}

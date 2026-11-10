@@ -7,7 +7,8 @@ Este benchmark responde a duas perguntas:
 2. **De onde vem a narrativa?** Sem a rule, o que faz o agente contar a história da
    mudança nos comentários: o modelo, o harness, o pedido ou o código que já existe?
 
-A primeira já tem uma resposta parcial em [results/](../results/). A segunda está aberta
+A primeira já tem uma resposta parcial em [results/](../results/), para uma família de
+modelos e um harness. A segunda está aberta
 e é o motivo de este protocolo existir: ele foi escrito para ser repetido em outros
 harnesses e modelos.
 
@@ -83,7 +84,8 @@ condição `rule`, pergunte quais instruções de projeto ele tem em contexto.
 [PROMPTS.md](PROMPTS.md), que manda ler as instruções do projeto e depois executar
 `TASK.md`. Serve quando o harness não carrega instruções de um diretório arbitrário, ou
 quando a execução é feita por subagentes. Foi o modo dos resultados publicados. Ele
-deixa o texto da rule mais recente no contexto do que estaria numa sessão de verdade.
+deixa o texto da rule mais recente no contexto do que estaria numa sessão de verdade,
+então uma repetição no modo A é o que mais acrescentaria ao que já existe.
 
 Nos dois modos:
 
@@ -177,15 +179,22 @@ hipóteses para testar, não conclusões:
 - **O conteúdo da narrativa vem do pedido.** No `s1`, que não traz história, nenhuma
   execução escreveu narrativa, em nenhuma condição. Os tokens que aparecem no código do
   `s2` e do `s4` são os do pedido.
-- **O modelo pesa.** No `s2`, sem pedir comentários e sem a rule, o Sonnet não levou
-  história para o código em nenhuma de 6 execuções; o Opus levou em 3 de 3 e o Fable em
-  3 de 3.
-- **Pedir comentários dispara em qualquer modelo.** No `s4`, sem a rule, os três modelos
-  levaram história para o código em 9 de 9 execuções.
-- **Não apareceu imitação de estilo.** No `s3`, sem a rule, o Sonnet manteve a narrativa
-  que já estava na função alterada, mas não escreveu narrativa nova na função criada;
-  em 1 de 6 execuções pôs o ticket do pedido num comentário. Só o Sonnet rodou esse
-  cenário.
+- **Não depende de outras instruções no projeto.** No `s4`, sem a rule, os três modelos
+  levaram história para o código em 9 de 9 execuções com o pacote de regras presente
+  (rodada 2) e em 9 de 9 num projeto sem instrução nenhuma (rodada 3).
+- **O modelo pesa em quando a narrativa aparece.** No `s2`, sem pedir comentários e sem
+  a rule, o Sonnet não levou história para o código em nenhuma de 6 execuções; o Opus
+  levou em 3 de 3 e o Fable em 3 de 3.
+- **O modelo pesa no que é levado.** No `s4` sem a rule, Opus e Fable costumam deixar de
+  fora o ticket, a data e os nomes de pessoas, e escrever o motivo e o caminho que não
+  foi tomado. O Sonnet escreveu o ticket em 6 de 6 execuções e, em algumas, também o
+  passo do plano ou a data do incidente.
+- **Pedir comentários dispara em qualquer modelo.** É a diferença entre o `s2` e o `s4`
+  no Sonnet: 0 de 6 contra 6 de 6.
+- **Não apareceu imitação de estilo.** No `s3`, sem a rule, os três modelos mantiveram a
+  narrativa que já estava na função alterada, mas nenhum escreveu narrativa na função
+  criada, em 12 execuções. Numa delas (Sonnet, rodada 1) o ticket do pedido foi parar
+  num comentário.
 
 ## Limites do desenho
 

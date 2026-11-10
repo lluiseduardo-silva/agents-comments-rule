@@ -1,0 +1,49 @@
+{
+  "id": "198db170",
+  "language": "Rust",
+  "file": "198db170.rs",
+  "targets": [
+    {
+      "name": "canUpload",
+      "kind": "function",
+      "params": [
+        "venda",
+        "userId"
+      ],
+      "returns": true,
+      "errors": [],
+      "mutates": [],
+      "partial_failure": false
+    },
+    {
+      "name": "canAccessAfterCancel",
+      "kind": "function",
+      "params": [
+        "venda",
+        "userId"
+      ],
+      "returns": true,
+      "errors": [],
+      "mutates": [],
+      "partial_failure": false
+    },
+    {
+      "name": "requireUpload",
+      "kind": "function",
+      "params": [
+        "venda",
+        "userId"
+      ],
+      "returns": false,
+      "errors": [
+        "UploadNaoPermitido quando canUpload é falso"
+      ],
+      "mutates": [],
+      "partial_failure": false
+    },
+    {
+      "name": "UploadNaoPermitido",
+      "kind": "type"
+    }
+  ]
+}
