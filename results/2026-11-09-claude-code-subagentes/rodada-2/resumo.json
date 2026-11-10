@@ -1,0 +1,3346 @@
+{
+  "runs": [
+    {
+      "id": "05055fac",
+      "tag": "sonnet",
+      "condition": "sonnet rule",
+      "scenario": "s1-greenfield",
+      "lang": "go",
+      "file": "estoque.go",
+      "batch": "b01",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "Estoque",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 4
+        },
+        {
+          "name": "construtor de Estoque",
+          "kind": "constructor",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 9
+        },
+        {
+          "name": "repor",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 1,
+          "docLines": 11
+        },
+        {
+          "name": "quantidade",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 8
+        },
+        {
+          "name": "reservar",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1,
+            "partial": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 15
+        },
+        {
+          "name": "normalizarSkus",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 12
+        }
+      ],
+      "narrative": [],
+      "leaks": {}
+    },
+    {
+      "id": "30c5823f",
+      "tag": "opus",
+      "condition": "opus rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "rust",
+      "file": "licenca_access_validator.rs",
+      "batch": "b01",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 16
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 17
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 15
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 2
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "9862f2a2",
+      "tag": "fable",
+      "condition": "fable baseline",
+      "scenario": "s2-bugfix",
+      "lang": "python",
+      "file": "licenca_access_validator.py",
+      "batch": "b01",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 0,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "attribution",
+              "text": "# Admin não envia licença (LIC-482): o upload exige titular da guia."
+            }
+          ],
+          "inlineComments": 2,
+          "docLines": 0
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 4
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 1
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 1
+        }
+      ],
+      "narrative": [
+        {
+          "target": "canUpload",
+          "category": "attribution",
+          "text": "# Admin não envia licença (LIC-482): o upload exige titular da guia."
+        }
+      ],
+      "leaks": {
+        "pedido": [
+          "LIC-482",
+          "manual-complete",
+          "titular"
+        ]
+      }
+    },
+    {
+      "id": "4c636bc0",
+      "tag": "fable",
+      "condition": "fable baseline",
+      "scenario": "s2-bugfix",
+      "lang": "kotlin",
+      "file": "LicencaAccessValidator.kt",
+      "batch": "b01",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 0,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 0
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 0,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 0
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 1
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 0
+          },
+          "score": 0,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 0
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": [
+          "LIC-482",
+          "manual-complete"
+        ]
+      }
+    },
+    {
+      "id": "da763984",
+      "tag": "opus",
+      "condition": "opus baseline",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "kotlin",
+      "file": "LicencaAccessValidator.kt",
+      "batch": "b01",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "attribution",
+              "text": "Só um compositor da guia pode enviar a licença (LIC-482)."
+            },
+            {
+              "category": "deliberation",
+              "text": "Aceitar o admin aqui só adiava a recusa para depois do envio do objeto, deixando arquivos órfãos no storage."
+            }
+          ],
+          "inlineComments": 0,
+          "docLines": 9
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "history",
+              "text": "o comprador perde, porque a compra deixou de valer."
+            }
+          ],
+          "inlineComments": 0,
+          "docLines": 7
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 6
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 4
+        }
+      ],
+      "narrative": [
+        {
+          "target": "canUpload",
+          "category": "attribution",
+          "text": "Só um compositor da guia pode enviar a licença (LIC-482)."
+        },
+        {
+          "target": "canUpload",
+          "category": "deliberation",
+          "text": "Aceitar o admin aqui só adiava a recusa para depois do envio do objeto, deixando arquivos órfãos no storage."
+        },
+        {
+          "target": "canAccessAfterCancel",
+          "category": "history",
+          "text": "o comprador perde, porque a compra deixou de valer."
+        }
+      ],
+      "leaks": {
+        "pedido": [
+          "LIC-482",
+          "manual-complete",
+          "titular",
+          "auditado"
+        ]
+      }
+    },
+    {
+      "id": "7bc9c945",
+      "tag": "fable",
+      "condition": "fable rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "typescript",
+      "file": "licencaAccessValidator.ts",
+      "batch": "b01",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 12
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 15
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 13
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 4
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "0f5b7dc8",
+      "tag": "opus",
+      "condition": "opus baseline",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "python",
+      "file": "licenca_access_validator.py",
+      "batch": "b02",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "history",
+              "text": "Aceitar admin aqui só adiava a recusa para depois do upload, deixando um objeto órfão no armazenamento."
+            },
+            {
+              "category": "deliberation",
+              "text": "Habilitar o envio por admin exigiria aceitar um compositor explícito na confirmação, o que daria ao admin o poder de aprovar a participação de um compositor."
+            }
+          ],
+          "inlineComments": 0,
+          "docLines": 10
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 1,
+          "docLines": 6
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 8
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 5
+        }
+      ],
+      "narrative": [
+        {
+          "target": "canUpload",
+          "category": "history",
+          "text": "Aceitar admin aqui só adiava a recusa para depois do upload, deixando um objeto órfão no armazenamento."
+        },
+        {
+          "target": "canUpload",
+          "category": "deliberation",
+          "text": "Habilitar o envio por admin exigiria aceitar um compositor explícito na confirmação, o que daria ao admin o poder de aprovar a participação de um compositor."
+        }
+      ],
+      "leaks": {
+        "pedido": [
+          "órfão",
+          "manual-complete",
+          "titular",
+          "auditado"
+        ]
+      }
+    },
+    {
+      "id": "7d5feb8d",
+      "tag": "sonnet",
+      "condition": "sonnet rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "go",
+      "file": "licenca_access_validator.go",
+      "batch": "b02",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 10
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 11
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 11
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 4
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "96e083f7",
+      "tag": "sonnet",
+      "condition": "sonnet baseline",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "kotlin",
+      "file": "LicencaAccessValidator.kt",
+      "batch": "b02",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "attribution",
+              "text": "Só compositor da guia pode enviar a licença (LIC-482)."
+            },
+            {
+              "category": "emphasis",
+              "text": "Admin NÃO envia"
+            },
+            {
+              "category": "deliberation",
+              "text": "habilitar o admin exigiria aceitar um `onBehalfOfUserId` explícito no confirm, o que lhe daria o poder de aprovar a participação de um compositor"
+            },
+            {
+              "category": "history",
+              "text": "Antes, este método devolvia true para admin e o `LicenseUploadService.assertUploadAllowed` derrubava a chamada com 403, deixando um objeto órfão no S3 a cada tentativa (incidente de 14/10)."
+            }
+          ],
+          "inlineComments": 0,
+          "docLines": 10
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 3
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "emphasis",
+              "text": "ANTES"
+            }
+          ],
+          "inlineComments": 0,
+          "docLines": 7
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 4
+        }
+      ],
+      "narrative": [
+        {
+          "target": "canUpload",
+          "category": "attribution",
+          "text": "Só compositor da guia pode enviar a licença (LIC-482)."
+        },
+        {
+          "target": "canUpload",
+          "category": "emphasis",
+          "text": "Admin NÃO envia"
+        },
+        {
+          "target": "canUpload",
+          "category": "deliberation",
+          "text": "habilitar o admin exigiria aceitar um `onBehalfOfUserId` explícito no confirm, o que lhe daria o poder de aprovar a participação de um compositor"
+        },
+        {
+          "target": "canUpload",
+          "category": "history",
+          "text": "Antes, este método devolvia true para admin e o `LicenseUploadService.assertUploadAllowed` derrubava a chamada com 403, deixando um objeto órfão no S3 a cada tentativa (incidente de 14/10)."
+        },
+        {
+          "target": "requireUpload",
+          "category": "emphasis",
+          "text": "ANTES"
+        }
+      ],
+      "leaks": {
+        "pedido": [
+          "LIC-482",
+          "14/10",
+          "S3",
+          "403",
+          "órfão",
+          "incidente",
+          "LicenseUploadService",
+          "assertUploadAllowed",
+          "manual-complete",
+          "onBehalfOfUserId",
+          "titular",
+          "auditado"
+        ]
+      }
+    },
+    {
+      "id": "c2f7cfbe",
+      "tag": "opus",
+      "condition": "opus rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "typescript",
+      "file": "licencaAccessValidator.ts",
+      "batch": "b02",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 12
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 16
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 11
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 7
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "c1f4bee1",
+      "tag": "opus",
+      "condition": "opus rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "kotlin",
+      "file": "LicencaAccessValidator.kt",
+      "batch": "b02",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 11
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 13
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 9
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 8
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "8f2a3d86",
+      "tag": "opus",
+      "condition": "opus baseline",
+      "scenario": "s2-bugfix",
+      "lang": "python",
+      "file": "licenca_access_validator.py",
+      "batch": "b02",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 0,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "attribution",
+              "text": "Admin não envia licença (LIC-482): o arquivo pertence a um titular, e o caminho administrativo auditado para destravar a venda é manual-complete."
+            }
+          ],
+          "inlineComments": 1,
+          "docLines": 0
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 0,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 1,
+          "docLines": 0
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 0,
+            "params": 0,
+            "errors": 0,
+            "mutation": 0
+          },
+          "score": 0,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 0
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 1
+        }
+      ],
+      "narrative": [
+        {
+          "target": "canUpload",
+          "category": "attribution",
+          "text": "Admin não envia licença (LIC-482): o arquivo pertence a um titular, e o caminho administrativo auditado para destravar a venda é manual-complete."
+        }
+      ],
+      "leaks": {
+        "pedido": [
+          "LIC-482",
+          "manual-complete",
+          "titular",
+          "auditado"
+        ]
+      }
+    },
+    {
+      "id": "9748d715",
+      "tag": "sonnet",
+      "condition": "sonnet rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "csharp",
+      "file": "LicencaAccessValidator.cs",
+      "batch": "b03",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 12
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 15
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 11
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 7
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "4fd9641f",
+      "tag": "opus",
+      "condition": "opus rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "python",
+      "file": "licenca_access_validator.py",
+      "batch": "b03",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 15
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 17
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 15
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 10
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "473caad5",
+      "tag": "opus",
+      "condition": "opus rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "go",
+      "file": "licenca_access_validator.go",
+      "batch": "b03",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 12
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 15
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 14
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 7
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "99c44daf",
+      "tag": "fable",
+      "condition": "fable rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "kotlin",
+      "file": "LicencaAccessValidator.kt",
+      "batch": "b03",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 12
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 14
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 10
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 9
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "9bff3784",
+      "tag": "fable",
+      "condition": "fable baseline",
+      "scenario": "s2-bugfix",
+      "lang": "rust",
+      "file": "licenca_access_validator.rs",
+      "batch": "b03",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 3
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 3
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 2
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 1
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": [
+          "manual-complete",
+          "titular"
+        ]
+      }
+    },
+    {
+      "id": "4268f24d",
+      "tag": "sonnet",
+      "condition": "sonnet rule",
+      "scenario": "s1-greenfield",
+      "lang": "python",
+      "file": "estoque.py",
+      "batch": "b03",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "Estoque",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 12
+        },
+        {
+          "name": "construtor de Estoque",
+          "kind": "constructor",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 12
+        },
+        {
+          "name": "repor",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 13
+        },
+        {
+          "name": "quantidade",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 10
+        },
+        {
+          "name": "reservar",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1,
+            "partial": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 18
+        },
+        {
+          "name": "normalizarSkus",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 11
+        }
+      ],
+      "narrative": [],
+      "leaks": {}
+    },
+    {
+      "id": "9a001f11",
+      "tag": "sonnet",
+      "condition": "sonnet rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "typescript",
+      "file": "licencaAccessValidator.ts",
+      "batch": "b04",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 11
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 12
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 10
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 6
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "9ecc731c",
+      "tag": "fable",
+      "condition": "fable rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "csharp",
+      "file": "LicencaAccessValidator.cs",
+      "batch": "b04",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 26
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 31
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 26
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 4
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "007a6dc8",
+      "tag": "opus",
+      "condition": "opus rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "csharp",
+      "file": "LicencaAccessValidator.cs",
+      "batch": "b04",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 11
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 12
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 9
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 4
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "302a8ed9",
+      "tag": "sonnet",
+      "condition": "sonnet baseline",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "rust",
+      "file": "licenca_access_validator.rs",
+      "batch": "b04",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "attribution",
+              "text": "Admin NÃO envia (LIC-482, D2):"
+            },
+            {
+              "category": "emphasis",
+              "text": "NÃO"
+            },
+            {
+              "category": "history",
+              "text": "o `LicenseUploadService.assertUploadAllowed` já rejeitava admin com 403 em `assertFileOwner`, então aceitar admin aqui só prometia um upload que falhava depois e deixava objeto órfão no S3."
+            },
+            {
+              "category": "deliberation",
+              "text": "Habilitar de verdade exigiria aceitar um `onBehalfOfUserId` explícito no confirm, dando ao admin o poder de aprovar a participação de um compositor."
+            }
+          ],
+          "inlineComments": 0,
+          "docLines": 9
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 5
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 4
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 1
+        }
+      ],
+      "narrative": [
+        {
+          "target": "canUpload",
+          "category": "attribution",
+          "text": "Admin NÃO envia (LIC-482, D2):"
+        },
+        {
+          "target": "canUpload",
+          "category": "emphasis",
+          "text": "NÃO"
+        },
+        {
+          "target": "canUpload",
+          "category": "history",
+          "text": "o `LicenseUploadService.assertUploadAllowed` já rejeitava admin com 403 em `assertFileOwner`, então aceitar admin aqui só prometia um upload que falhava depois e deixava objeto órfão no S3."
+        },
+        {
+          "target": "canUpload",
+          "category": "deliberation",
+          "text": "Habilitar de verdade exigiria aceitar um `onBehalfOfUserId` explícito no confirm, dando ao admin o poder de aprovar a participação de um compositor."
+        }
+      ],
+      "leaks": {
+        "pedido": [
+          "LIC-482",
+          "D2",
+          "S3",
+          "403",
+          "órfão",
+          "assertFileOwner",
+          "LicenseUploadService",
+          "assertUploadAllowed",
+          "manual-complete",
+          "onBehalfOfUserId",
+          "auditado"
+        ]
+      }
+    },
+    {
+      "id": "1080a9ff",
+      "tag": "opus",
+      "condition": "opus baseline",
+      "scenario": "s2-bugfix",
+      "lang": "kotlin",
+      "file": "LicencaAccessValidator.kt",
+      "batch": "b04",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "none",
+      "idiomatic": null,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 0,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 0
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 0,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 0
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 0,
+            "params": 0,
+            "errors": 0,
+            "mutation": 0
+          },
+          "score": 0,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 0
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 0
+          },
+          "score": 0,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 0
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": [
+          "LIC-482"
+        ]
+      }
+    },
+    {
+      "id": "5dbf42cb",
+      "tag": "opus",
+      "condition": "opus baseline",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "rust",
+      "file": "licenca_access_validator.rs",
+      "batch": "b04",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "deliberation",
+              "text": "Aceitar admin aqui só adiaria a recusa para depois de o arquivo já ter sido gravado, deixando um objeto órfão no storage."
+            }
+          ],
+          "inlineComments": 1,
+          "docLines": 8
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "history",
+              "text": "porque a compra que lhe dava direito à licença deixou de existir."
+            }
+          ],
+          "inlineComments": 1,
+          "docLines": 6
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 4
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 2
+        }
+      ],
+      "narrative": [
+        {
+          "target": "canUpload",
+          "category": "deliberation",
+          "text": "Aceitar admin aqui só adiaria a recusa para depois de o arquivo já ter sido gravado, deixando um objeto órfão no storage."
+        },
+        {
+          "target": "canAccessAfterCancel",
+          "category": "history",
+          "text": "porque a compra que lhe dava direito à licença deixou de existir."
+        }
+      ],
+      "leaks": {
+        "pedido": [
+          "órfão",
+          "manual-complete",
+          "titular",
+          "auditado"
+        ]
+      }
+    },
+    {
+      "id": "544b7b9f",
+      "tag": "fable",
+      "condition": "fable baseline",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "rust",
+      "file": "licenca_access_validator.rs",
+      "batch": "b05",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0.5,
+            "ret": 1,
+            "mutation": 0
+          },
+          "score": 0.625,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "deliberation",
+              "text": "Responder `true` para admin seria prometer um upload que falha logo adiante, deixando um objeto órfão no storage;"
+            },
+            {
+              "category": "deliberation",
+              "text": "para o admin enviar de verdade, a confirmação teria de aceitar o compositor como parâmetro, o que daria ao admin o poder de aprovar a participação de um compositor;"
+            }
+          ],
+          "inlineComments": 0,
+          "docLines": 16
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0.5,
+            "ret": 1,
+            "mutation": 0
+          },
+          "score": 0.625,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 1,
+          "docLines": 10
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0.5,
+            "errors": 1,
+            "mutation": 0
+          },
+          "score": 0.625,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 6
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 5
+        }
+      ],
+      "narrative": [
+        {
+          "target": "canUpload",
+          "category": "deliberation",
+          "text": "Responder `true` para admin seria prometer um upload que falha logo adiante, deixando um objeto órfão no storage;"
+        },
+        {
+          "target": "canUpload",
+          "category": "deliberation",
+          "text": "para o admin enviar de verdade, a confirmação teria de aceitar o compositor como parâmetro, o que daria ao admin o poder de aprovar a participação de um compositor;"
+        }
+      ],
+      "leaks": {
+        "pedido": [
+          "órfão",
+          "manual-complete",
+          "titular",
+          "auditado"
+        ]
+      }
+    },
+    {
+      "id": "cec1129c",
+      "tag": "sonnet",
+      "condition": "sonnet rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "kotlin",
+      "file": "LicencaAccessValidator.kt",
+      "batch": "b05",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 10
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 12
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 9
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 6
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "322daae2",
+      "tag": "sonnet",
+      "condition": "sonnet rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "python",
+      "file": "licenca_access_validator.py",
+      "batch": "b05",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 13
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 14
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 11
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 1
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "b070d424",
+      "tag": "sonnet",
+      "condition": "sonnet rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "rust",
+      "file": "licenca_access_validator.rs",
+      "batch": "b05",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 11
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 14
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 10
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 3
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "519644b9",
+      "tag": "sonnet",
+      "condition": "sonnet rule",
+      "scenario": "s1-greenfield",
+      "lang": "kotlin",
+      "file": "Estoque.kt",
+      "batch": "b05",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "Estoque",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 10
+        },
+        {
+          "name": "construtor de Estoque",
+          "kind": "constructor",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 10
+        },
+        {
+          "name": "repor",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 10
+        },
+        {
+          "name": "quantidade",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 8
+        },
+        {
+          "name": "reservar",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1,
+            "partial": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 15
+        },
+        {
+          "name": "normalizarSkus",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 10
+        }
+      ],
+      "narrative": [],
+      "leaks": {}
+    },
+    {
+      "id": "07d359a8",
+      "tag": "opus",
+      "condition": "opus baseline",
+      "scenario": "s2-bugfix",
+      "lang": "rust",
+      "file": "licenca_access_validator.rs",
+      "batch": "b05",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "attribution",
+              "text": "Admin não envia (LIC-482)"
+            }
+          ],
+          "inlineComments": 0,
+          "docLines": 2
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 2
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 1
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 0
+          },
+          "score": 0,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 0
+        }
+      ],
+      "narrative": [
+        {
+          "target": "canUpload",
+          "category": "attribution",
+          "text": "Admin não envia (LIC-482)"
+        }
+      ],
+      "leaks": {
+        "pedido": [
+          "LIC-482",
+          "manual-complete"
+        ]
+      }
+    },
+    {
+      "id": "0c3e18e9",
+      "tag": "fable",
+      "condition": "fable rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "go",
+      "file": "licenca_access_validator.go",
+      "batch": "b06",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 13
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 17
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 13
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 2
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "e55d87d6",
+      "tag": "fable",
+      "condition": "fable baseline",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "kotlin",
+      "file": "LicencaAccessValidator.kt",
+      "batch": "b06",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "deliberation",
+              "text": "Aceitá-lo exigiria informar em nome de qual compositor ele envia, o que lhe daria o poder de aprovar a participação de um compositor."
+            }
+          ],
+          "inlineComments": 0,
+          "docLines": 11
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 7
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 8
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 6
+        }
+      ],
+      "narrative": [
+        {
+          "target": "canUpload",
+          "category": "deliberation",
+          "text": "Aceitá-lo exigiria informar em nome de qual compositor ele envia, o que lhe daria o poder de aprovar a participação de um compositor."
+        }
+      ],
+      "leaks": {
+        "pedido": [
+          "403",
+          "órfão",
+          "LicenseUploadService",
+          "assertUploadAllowed",
+          "manual-complete",
+          "titular",
+          "auditado"
+        ]
+      }
+    },
+    {
+      "id": "d83f1bd1",
+      "tag": "fable",
+      "condition": "fable rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "python",
+      "file": "licenca_access_validator.py",
+      "batch": "b06",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 17
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 21
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 14
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 9
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "adb890e4",
+      "tag": "fable",
+      "condition": "fable rule",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "rust",
+      "file": "licenca_access_validator.rs",
+      "batch": "b06",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 18
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "ret": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 24
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 1,
+            "errors": 1,
+            "mutation": 1
+          },
+          "score": 1,
+          "mutation": "explicit",
+          "mutationComplete": true,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 19
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 4
+        }
+      ],
+      "narrative": [],
+      "leaks": {
+        "pedido": []
+      }
+    },
+    {
+      "id": "8da8493b",
+      "tag": "fable",
+      "condition": "fable baseline",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "python",
+      "file": "licenca_access_validator.py",
+      "batch": "b06",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "deliberation",
+              "text": "Um `True` para admin aqui seria uma promessa que termina em erro e deixa um objeto órfão no armazenamento a cada tentativa."
+            }
+          ],
+          "inlineComments": 1,
+          "docLines": 10
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 1,
+          "docLines": 9
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 6
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 5
+        }
+      ],
+      "narrative": [
+        {
+          "target": "canUpload",
+          "category": "deliberation",
+          "text": "Um `True` para admin aqui seria uma promessa que termina em erro e deixa um objeto órfão no armazenamento a cada tentativa."
+        }
+      ],
+      "leaks": {
+        "pedido": [
+          "403",
+          "órfão",
+          "promessa",
+          "LicenseUploadService",
+          "assertUploadAllowed",
+          "manual-complete",
+          "titular",
+          "auditado"
+        ]
+      }
+    },
+    {
+      "id": "a30ba2f6",
+      "tag": "sonnet",
+      "condition": "sonnet baseline",
+      "scenario": "s4-bugfix-comentado",
+      "lang": "python",
+      "file": "licenca_access_validator.py",
+      "batch": "b06",
+      "changed": true,
+      "judged": true,
+      "proseLanguage": "pt",
+      "idiomatic": true,
+      "targets": [
+        {
+          "name": "canUpload",
+          "kind": "function",
+          "items": {
+            "doc": 0,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "attribution",
+              "text": "Admin NÃO envia licença (LIC-482)."
+            },
+            {
+              "category": "emphasis",
+              "text": "Admin NÃO envia licença (LIC-482)."
+            },
+            {
+              "category": "history",
+              "text": "antes, esta checagem devolvia True e a chamada caía em 403 logo depois, deixando objeto órfão no S3."
+            },
+            {
+              "category": "deliberation",
+              "text": "Habilitar de verdade exigiria um `onBehalfOfUserId` explícito, dando ao admin poder de aprovar a participação de um compositor."
+            }
+          ],
+          "inlineComments": 2,
+          "docLines": 0
+        },
+        {
+          "name": "canAccessAfterCancel",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "ret": 0,
+            "mutation": 0
+          },
+          "score": 0.25,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 1,
+          "docLines": 5
+        },
+        {
+          "name": "requireUpload",
+          "kind": "function",
+          "items": {
+            "doc": 1,
+            "params": 0,
+            "errors": 1,
+            "mutation": 0
+          },
+          "score": 0.5,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [
+            {
+              "category": "emphasis",
+              "text": "Deve ser chamada ANTES de qualquer efeito colateral (ex.: gravar no S3),"
+            }
+          ],
+          "inlineComments": 0,
+          "docLines": 5
+        },
+        {
+          "name": "UploadNaoPermitido",
+          "kind": "type",
+          "items": {
+            "doc": 1
+          },
+          "score": 1,
+          "mutation": "absent",
+          "mutationComplete": false,
+          "narrative": [],
+          "inlineComments": 0,
+          "docLines": 5
+        }
+      ],
+      "narrative": [
+        {
+          "target": "canUpload",
+          "category": "attribution",
+          "text": "Admin NÃO envia licença (LIC-482)."
+        },
+        {
+          "target": "canUpload",
+          "category": "emphasis",
+          "text": "Admin NÃO envia licença (LIC-482)."
+        },
+        {
+          "target": "canUpload",
+          "category": "history",
+          "text": "antes, esta checagem devolvia True e a chamada caía em 403 logo depois, deixando objeto órfão no S3."
+        },
+        {
+          "target": "canUpload",
+          "category": "deliberation",
+          "text": "Habilitar de verdade exigiria um `onBehalfOfUserId` explícito, dando ao admin poder de aprovar a participação de um compositor."
+        },
+        {
+          "target": "requireUpload",
+          "category": "emphasis",
+          "text": "Deve ser chamada ANTES de qualquer efeito colateral (ex.: gravar no S3),"
+        }
+      ],
+      "leaks": {
+        "pedido": [
+          "LIC-482",
+          "S3",
+          "403",
+          "órfão",
+          "manual-complete",
+          "onBehalfOfUserId",
+          "titular",
+          "auditado"
+        ]
+      }
+    }
+  ],
+  "problems": []
+}

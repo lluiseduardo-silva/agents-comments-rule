@@ -1,0 +1,290 @@
+{
+  "05055fac": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s1-greenfield",
+    "lang": "go",
+    "file": "estoque.go",
+    "batch": "b01"
+  },
+  "30c5823f": {
+    "tag": "opus",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "rust",
+    "file": "licenca_access_validator.rs",
+    "batch": "b01"
+  },
+  "9862f2a2": {
+    "tag": "fable",
+    "condition": "baseline",
+    "scenario": "s2-bugfix",
+    "lang": "python",
+    "file": "licenca_access_validator.py",
+    "batch": "b01"
+  },
+  "4c636bc0": {
+    "tag": "fable",
+    "condition": "baseline",
+    "scenario": "s2-bugfix",
+    "lang": "kotlin",
+    "file": "LicencaAccessValidator.kt",
+    "batch": "b01"
+  },
+  "da763984": {
+    "tag": "opus",
+    "condition": "baseline",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "kotlin",
+    "file": "LicencaAccessValidator.kt",
+    "batch": "b01"
+  },
+  "7bc9c945": {
+    "tag": "fable",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "typescript",
+    "file": "licencaAccessValidator.ts",
+    "batch": "b01"
+  },
+  "0f5b7dc8": {
+    "tag": "opus",
+    "condition": "baseline",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "python",
+    "file": "licenca_access_validator.py",
+    "batch": "b02"
+  },
+  "7d5feb8d": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "go",
+    "file": "licenca_access_validator.go",
+    "batch": "b02"
+  },
+  "96e083f7": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "kotlin",
+    "file": "LicencaAccessValidator.kt",
+    "batch": "b02"
+  },
+  "c2f7cfbe": {
+    "tag": "opus",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "typescript",
+    "file": "licencaAccessValidator.ts",
+    "batch": "b02"
+  },
+  "c1f4bee1": {
+    "tag": "opus",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "kotlin",
+    "file": "LicencaAccessValidator.kt",
+    "batch": "b02"
+  },
+  "8f2a3d86": {
+    "tag": "opus",
+    "condition": "baseline",
+    "scenario": "s2-bugfix",
+    "lang": "python",
+    "file": "licenca_access_validator.py",
+    "batch": "b02"
+  },
+  "9748d715": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "csharp",
+    "file": "LicencaAccessValidator.cs",
+    "batch": "b03"
+  },
+  "4fd9641f": {
+    "tag": "opus",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "python",
+    "file": "licenca_access_validator.py",
+    "batch": "b03"
+  },
+  "473caad5": {
+    "tag": "opus",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "go",
+    "file": "licenca_access_validator.go",
+    "batch": "b03"
+  },
+  "99c44daf": {
+    "tag": "fable",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "kotlin",
+    "file": "LicencaAccessValidator.kt",
+    "batch": "b03"
+  },
+  "9bff3784": {
+    "tag": "fable",
+    "condition": "baseline",
+    "scenario": "s2-bugfix",
+    "lang": "rust",
+    "file": "licenca_access_validator.rs",
+    "batch": "b03"
+  },
+  "4268f24d": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s1-greenfield",
+    "lang": "python",
+    "file": "estoque.py",
+    "batch": "b03"
+  },
+  "9a001f11": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "typescript",
+    "file": "licencaAccessValidator.ts",
+    "batch": "b04"
+  },
+  "9ecc731c": {
+    "tag": "fable",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "csharp",
+    "file": "LicencaAccessValidator.cs",
+    "batch": "b04"
+  },
+  "007a6dc8": {
+    "tag": "opus",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "csharp",
+    "file": "LicencaAccessValidator.cs",
+    "batch": "b04"
+  },
+  "302a8ed9": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "rust",
+    "file": "licenca_access_validator.rs",
+    "batch": "b04"
+  },
+  "1080a9ff": {
+    "tag": "opus",
+    "condition": "baseline",
+    "scenario": "s2-bugfix",
+    "lang": "kotlin",
+    "file": "LicencaAccessValidator.kt",
+    "batch": "b04"
+  },
+  "5dbf42cb": {
+    "tag": "opus",
+    "condition": "baseline",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "rust",
+    "file": "licenca_access_validator.rs",
+    "batch": "b04"
+  },
+  "544b7b9f": {
+    "tag": "fable",
+    "condition": "baseline",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "rust",
+    "file": "licenca_access_validator.rs",
+    "batch": "b05"
+  },
+  "cec1129c": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "kotlin",
+    "file": "LicencaAccessValidator.kt",
+    "batch": "b05"
+  },
+  "322daae2": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "python",
+    "file": "licenca_access_validator.py",
+    "batch": "b05"
+  },
+  "b070d424": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "rust",
+    "file": "licenca_access_validator.rs",
+    "batch": "b05"
+  },
+  "519644b9": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s1-greenfield",
+    "lang": "kotlin",
+    "file": "Estoque.kt",
+    "batch": "b05"
+  },
+  "07d359a8": {
+    "tag": "opus",
+    "condition": "baseline",
+    "scenario": "s2-bugfix",
+    "lang": "rust",
+    "file": "licenca_access_validator.rs",
+    "batch": "b05"
+  },
+  "0c3e18e9": {
+    "tag": "fable",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "go",
+    "file": "licenca_access_validator.go",
+    "batch": "b06"
+  },
+  "e55d87d6": {
+    "tag": "fable",
+    "condition": "baseline",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "kotlin",
+    "file": "LicencaAccessValidator.kt",
+    "batch": "b06"
+  },
+  "d83f1bd1": {
+    "tag": "fable",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "python",
+    "file": "licenca_access_validator.py",
+    "batch": "b06"
+  },
+  "adb890e4": {
+    "tag": "fable",
+    "condition": "rule",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "rust",
+    "file": "licenca_access_validator.rs",
+    "batch": "b06"
+  },
+  "8da8493b": {
+    "tag": "fable",
+    "condition": "baseline",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "python",
+    "file": "licenca_access_validator.py",
+    "batch": "b06"
+  },
+  "a30ba2f6": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s4-bugfix-comentado",
+    "lang": "python",
+    "file": "licenca_access_validator.py",
+    "batch": "b06"
+  }
+}

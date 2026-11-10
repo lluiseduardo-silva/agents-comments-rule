@@ -1,0 +1,83 @@
+{
+  "id": "b02d340f",
+  "language": "Python",
+  "file": "b02d340f.py",
+  "targets": [
+    {
+      "name": "Estoque",
+      "kind": "type"
+    },
+    {
+      "name": "construtor de Estoque",
+      "kind": "constructor",
+      "params": [
+        "limitePorSku"
+      ],
+      "returns": false,
+      "errors": [
+        "limitePorSku menor ou igual a zero"
+      ],
+      "mutates": [],
+      "partial_failure": false
+    },
+    {
+      "name": "repor",
+      "kind": "function",
+      "params": [
+        "sku",
+        "quantidade"
+      ],
+      "returns": false,
+      "errors": [
+        "quantidade menor ou igual a zero",
+        "saldo resultante acima de limitePorSku"
+      ],
+      "mutates": [
+        "o saldo guardado no próprio Estoque"
+      ],
+      "partial_failure": false
+    },
+    {
+      "name": "quantidade",
+      "kind": "function",
+      "params": [
+        "sku"
+      ],
+      "returns": true,
+      "errors": [],
+      "mutates": [],
+      "partial_failure": false
+    },
+    {
+      "name": "reservar",
+      "kind": "function",
+      "params": [
+        "itens",
+        "pedido"
+      ],
+      "returns": false,
+      "errors": [
+        "quantidade menor ou igual a zero",
+        "saldo insuficiente"
+      ],
+      "mutates": [
+        "o saldo guardado no próprio Estoque",
+        "o argumento pedido (pedido.linhas)"
+      ],
+      "partial_failure": true
+    },
+    {
+      "name": "normalizarSkus",
+      "kind": "function",
+      "params": [
+        "skus"
+      ],
+      "returns": true,
+      "errors": [],
+      "mutates": [
+        "o argumento skus, alterado no lugar"
+      ],
+      "partial_failure": false
+    }
+  ]
+}

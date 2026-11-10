@@ -1,0 +1,49 @@
+{
+  "id": "7bc9c945",
+  "language": "TypeScript",
+  "file": "7bc9c945.ts",
+  "targets": [
+    {
+      "name": "canUpload",
+      "kind": "function",
+      "params": [
+        "venda",
+        "userId"
+      ],
+      "returns": true,
+      "errors": [],
+      "mutates": [],
+      "partial_failure": false
+    },
+    {
+      "name": "canAccessAfterCancel",
+      "kind": "function",
+      "params": [
+        "venda",
+        "userId"
+      ],
+      "returns": true,
+      "errors": [],
+      "mutates": [],
+      "partial_failure": false
+    },
+    {
+      "name": "requireUpload",
+      "kind": "function",
+      "params": [
+        "venda",
+        "userId"
+      ],
+      "returns": false,
+      "errors": [
+        "UploadNaoPermitido quando canUpload é falso"
+      ],
+      "mutates": [],
+      "partial_failure": false
+    },
+    {
+      "name": "UploadNaoPermitido",
+      "kind": "type"
+    }
+  ]
+}

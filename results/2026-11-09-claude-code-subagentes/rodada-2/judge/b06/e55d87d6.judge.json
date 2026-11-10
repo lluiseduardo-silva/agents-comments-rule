@@ -1,0 +1,72 @@
+{
+  "id": "e55d87d6",
+  "prose_language": "pt",
+  "idiomatic_format": true,
+  "targets": [
+    {
+      "name": "canUpload",
+      "found": true,
+      "has_doc": true,
+      "summary_states_behavior": true,
+      "params_documented": 0,
+      "return_documented": false,
+      "errors_documented": 0,
+      "mutation": "absent",
+      "mutation_complete": false,
+      "partial_failure_documented": false,
+      "narrative": [
+        {
+          "category": "deliberation",
+          "text": "Aceitá-lo exigiria informar em nome de qual compositor ele envia, o que lhe daria o poder de aprovar a participação de um compositor."
+        }
+      ],
+      "inline_comments": 0,
+      "doc_lines": 11
+    },
+    {
+      "name": "canAccessAfterCancel",
+      "found": true,
+      "has_doc": true,
+      "summary_states_behavior": true,
+      "params_documented": 0,
+      "return_documented": false,
+      "errors_documented": 0,
+      "mutation": "absent",
+      "mutation_complete": false,
+      "partial_failure_documented": false,
+      "narrative": [],
+      "inline_comments": 0,
+      "doc_lines": 7
+    },
+    {
+      "name": "requireUpload",
+      "found": true,
+      "has_doc": true,
+      "summary_states_behavior": true,
+      "params_documented": 0,
+      "return_documented": false,
+      "errors_documented": 1,
+      "mutation": "absent",
+      "mutation_complete": false,
+      "partial_failure_documented": false,
+      "narrative": [],
+      "inline_comments": 0,
+      "doc_lines": 8
+    },
+    {
+      "name": "UploadNaoPermitido",
+      "found": true,
+      "has_doc": true,
+      "summary_states_behavior": true,
+      "params_documented": 0,
+      "return_documented": false,
+      "errors_documented": 0,
+      "mutation": "absent",
+      "mutation_complete": false,
+      "partial_failure_documented": false,
+      "narrative": [],
+      "inline_comments": 0,
+      "doc_lines": 6
+    }
+  ]
+}

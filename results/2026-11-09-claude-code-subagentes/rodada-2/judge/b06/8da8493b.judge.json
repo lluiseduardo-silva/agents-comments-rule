@@ -1,0 +1,72 @@
+{
+  "id": "8da8493b",
+  "prose_language": "pt",
+  "idiomatic_format": true,
+  "targets": [
+    {
+      "name": "canUpload",
+      "found": true,
+      "has_doc": true,
+      "summary_states_behavior": true,
+      "params_documented": 0,
+      "return_documented": false,
+      "errors_documented": 0,
+      "mutation": "absent",
+      "mutation_complete": false,
+      "partial_failure_documented": false,
+      "narrative": [
+        {
+          "category": "deliberation",
+          "text": "Um `True` para admin aqui seria uma promessa que termina em erro e deixa um objeto órfão no armazenamento a cada tentativa."
+        }
+      ],
+      "inline_comments": 1,
+      "doc_lines": 10
+    },
+    {
+      "name": "canAccessAfterCancel",
+      "found": true,
+      "has_doc": true,
+      "summary_states_behavior": true,
+      "params_documented": 0,
+      "return_documented": false,
+      "errors_documented": 0,
+      "mutation": "absent",
+      "mutation_complete": false,
+      "partial_failure_documented": false,
+      "narrative": [],
+      "inline_comments": 1,
+      "doc_lines": 9
+    },
+    {
+      "name": "requireUpload",
+      "found": true,
+      "has_doc": true,
+      "summary_states_behavior": true,
+      "params_documented": 0,
+      "return_documented": false,
+      "errors_documented": 1,
+      "mutation": "absent",
+      "mutation_complete": false,
+      "partial_failure_documented": false,
+      "narrative": [],
+      "inline_comments": 0,
+      "doc_lines": 6
+    },
+    {
+      "name": "UploadNaoPermitido",
+      "found": true,
+      "has_doc": true,
+      "summary_states_behavior": true,
+      "params_documented": 0,
+      "return_documented": false,
+      "errors_documented": 0,
+      "mutation": "absent",
+      "mutation_complete": false,
+      "partial_failure_documented": false,
+      "narrative": [],
+      "inline_comments": 0,
+      "doc_lines": 5
+    }
+  ]
+}

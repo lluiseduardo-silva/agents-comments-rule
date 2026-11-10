@@ -1,0 +1,67 @@
+{
+  "id": "9748d715",
+  "prose_language": "pt",
+  "idiomatic_format": true,
+  "targets": [
+    {
+      "name": "canUpload",
+      "found": true,
+      "has_doc": true,
+      "summary_states_behavior": true,
+      "params_documented": 2,
+      "return_documented": true,
+      "errors_documented": 0,
+      "mutation": "explicit",
+      "mutation_complete": true,
+      "partial_failure_documented": false,
+      "narrative": [],
+      "inline_comments": 0,
+      "doc_lines": 12
+    },
+    {
+      "name": "canAccessAfterCancel",
+      "found": true,
+      "has_doc": true,
+      "summary_states_behavior": true,
+      "params_documented": 2,
+      "return_documented": true,
+      "errors_documented": 0,
+      "mutation": "explicit",
+      "mutation_complete": true,
+      "partial_failure_documented": false,
+      "narrative": [],
+      "inline_comments": 0,
+      "doc_lines": 15
+    },
+    {
+      "name": "requireUpload",
+      "found": true,
+      "has_doc": true,
+      "summary_states_behavior": true,
+      "params_documented": 2,
+      "return_documented": false,
+      "errors_documented": 1,
+      "mutation": "explicit",
+      "mutation_complete": true,
+      "partial_failure_documented": false,
+      "narrative": [],
+      "inline_comments": 0,
+      "doc_lines": 11
+    },
+    {
+      "name": "UploadNaoPermitido",
+      "found": true,
+      "has_doc": true,
+      "summary_states_behavior": true,
+      "params_documented": 0,
+      "return_documented": false,
+      "errors_documented": 0,
+      "mutation": "absent",
+      "mutation_complete": false,
+      "partial_failure_documented": false,
+      "narrative": [],
+      "inline_comments": 0,
+      "doc_lines": 7
+    }
+  ]
+}

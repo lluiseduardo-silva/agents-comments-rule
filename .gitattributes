@@ -1,0 +1,6 @@
+# install.sh precisa de LF para funcionar com "curl | sh"; o resto segue junto.
+* text=auto eol=lf
+
+# Evidencia e sementes do benchmark ficam byte a byte como foram produzidas.
+results/** -text
+bench/seeds/** -text

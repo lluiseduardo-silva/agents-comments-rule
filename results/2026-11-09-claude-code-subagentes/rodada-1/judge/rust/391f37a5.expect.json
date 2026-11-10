@@ -1,0 +1,39 @@
+{
+  "id": "391f37a5",
+  "language": "Rust",
+  "file": "391f37a5.rs",
+  "targets": [
+    {
+      "name": "aplicar",
+      "kind": "function",
+      "params": [
+        "pedido",
+        "cupom"
+      ],
+      "returns": false,
+      "errors": [
+        "limite de cupons por pedido atingido",
+        "cupom expirado",
+        "cupom já aplicado neste pedido"
+      ],
+      "mutates": [
+        "o argumento pedido (total e cuponsAplicados)"
+      ],
+      "partial_failure": false
+    },
+    {
+      "name": "remover",
+      "kind": "function",
+      "params": [
+        "pedido",
+        "codigo"
+      ],
+      "returns": true,
+      "errors": [],
+      "mutates": [
+        "o argumento pedido (cuponsAplicados)"
+      ],
+      "partial_failure": false
+    }
+  ]
+}

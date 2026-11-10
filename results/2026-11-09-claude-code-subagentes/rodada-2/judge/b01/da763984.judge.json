@@ -1,0 +1,81 @@
+{
+  "id": "da763984",
+  "prose_language": "pt",
+  "idiomatic_format": true,
+  "targets": [
+    {
+      "name": "canUpload",
+      "found": true,
+      "has_doc": true,
+      "summary_states_behavior": true,
+      "params_documented": 0,
+      "return_documented": false,
+      "errors_documented": 0,
+      "mutation": "absent",
+      "mutation_complete": false,
+      "partial_failure_documented": false,
+      "narrative": [
+        {
+          "category": "attribution",
+          "text": "Só um compositor da guia pode enviar a licença (LIC-482)."
+        },
+        {
+          "category": "deliberation",
+          "text": "Aceitar o admin aqui só adiava a recusa para depois do envio do objeto, deixando arquivos órfãos no storage."
+        }
+      ],
+      "inline_comments": 0,
+      "doc_lines": 9
+    },
+    {
+      "name": "canAccessAfterCancel",
+      "found": true,
+      "has_doc": true,
+      "summary_states_behavior": true,
+      "params_documented": 0,
+      "return_documented": false,
+      "errors_documented": 0,
+      "mutation": "absent",
+      "mutation_complete": false,
+      "partial_failure_documented": false,
+      "narrative": [
+        {
+          "category": "history",
+          "text": "o comprador perde, porque a compra deixou de valer."
+        }
+      ],
+      "inline_comments": 0,
+      "doc_lines": 7
+    },
+    {
+      "name": "requireUpload",
+      "found": true,
+      "has_doc": true,
+      "summary_states_behavior": true,
+      "params_documented": 0,
+      "return_documented": false,
+      "errors_documented": 1,
+      "mutation": "absent",
+      "mutation_complete": false,
+      "partial_failure_documented": false,
+      "narrative": [],
+      "inline_comments": 0,
+      "doc_lines": 6
+    },
+    {
+      "name": "UploadNaoPermitido",
+      "found": true,
+      "has_doc": true,
+      "summary_states_behavior": true,
+      "params_documented": 0,
+      "return_documented": false,
+      "errors_documented": 0,
+      "mutation": "absent",
+      "mutation_complete": false,
+      "partial_failure_documented": false,
+      "narrative": [],
+      "inline_comments": 0,
+      "doc_lines": 4
+    }
+  ]
+}

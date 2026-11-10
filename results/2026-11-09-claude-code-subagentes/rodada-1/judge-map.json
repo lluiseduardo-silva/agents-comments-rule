@@ -1,0 +1,254 @@
+{
+  "48848062": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s3-infested",
+    "lang": "python",
+    "file": "cupom_service.py"
+  },
+  "99974351": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s3-infested",
+    "lang": "kotlin",
+    "file": "CupomService.kt"
+  },
+  "776a08fa": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s2-bugfix",
+    "lang": "csharp",
+    "file": "LicencaAccessValidator.cs"
+  },
+  "85012b59": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s1-greenfield",
+    "lang": "kotlin",
+    "file": "Estoque.kt"
+  },
+  "d52428a3": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s2-bugfix",
+    "lang": "typescript",
+    "file": "licencaAccessValidator.ts"
+  },
+  "5deaa301": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s3-infested",
+    "lang": "go",
+    "file": "cupom_service.go"
+  },
+  "a171941b": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s2-bugfix",
+    "lang": "kotlin",
+    "file": "LicencaAccessValidator.kt"
+  },
+  "17b76bca": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s2-bugfix",
+    "lang": "rust",
+    "file": "licenca_access_validator.rs"
+  },
+  "c01b4da0": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s3-infested",
+    "lang": "rust",
+    "file": "cupom_service.rs"
+  },
+  "2227d883": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s3-infested",
+    "lang": "csharp",
+    "file": "CupomService.cs"
+  },
+  "391f37a5": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s3-infested",
+    "lang": "rust",
+    "file": "cupom_service.rs"
+  },
+  "0b5389db": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s3-infested",
+    "lang": "typescript",
+    "file": "cupomService.ts"
+  },
+  "d6e94bda": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s3-infested",
+    "lang": "python",
+    "file": "cupom_service.py"
+  },
+  "5d2b1262": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s1-greenfield",
+    "lang": "rust",
+    "file": "estoque.rs"
+  },
+  "774db09e": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s1-greenfield",
+    "lang": "typescript",
+    "file": "estoque.ts"
+  },
+  "b02d340f": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s1-greenfield",
+    "lang": "python",
+    "file": "estoque.py"
+  },
+  "a3687b81": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s2-bugfix",
+    "lang": "csharp",
+    "file": "LicencaAccessValidator.cs"
+  },
+  "f3b3753f": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s1-greenfield",
+    "lang": "typescript",
+    "file": "estoque.ts"
+  },
+  "b57a5629": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s2-bugfix",
+    "lang": "go",
+    "file": "licenca_access_validator.go"
+  },
+  "d3fe4f9a": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s1-greenfield",
+    "lang": "csharp",
+    "file": "Estoque.cs"
+  },
+  "4e29ac77": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s1-greenfield",
+    "lang": "go",
+    "file": "estoque.go"
+  },
+  "115c0cf9": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s1-greenfield",
+    "lang": "rust",
+    "file": "estoque.rs"
+  },
+  "8ce00a95": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s2-bugfix",
+    "lang": "python",
+    "file": "licenca_access_validator.py"
+  },
+  "3ce02d37": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s2-bugfix",
+    "lang": "rust",
+    "file": "licenca_access_validator.rs"
+  },
+  "9d9fb11a": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s2-bugfix",
+    "lang": "python",
+    "file": "licenca_access_validator.py"
+  },
+  "3982d655": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s2-bugfix",
+    "lang": "typescript",
+    "file": "licencaAccessValidator.ts"
+  },
+  "f99a9a2f": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s3-infested",
+    "lang": "go",
+    "file": "cupom_service.go"
+  },
+  "714e49f4": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s3-infested",
+    "lang": "csharp",
+    "file": "CupomService.cs"
+  },
+  "daffbf0d": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s1-greenfield",
+    "lang": "csharp",
+    "file": "Estoque.cs"
+  },
+  "9bab0fd6": {
+    "tag": "sonnet",
+    "condition": "baseline",
+    "scenario": "s3-infested",
+    "lang": "typescript",
+    "file": "cupomService.ts"
+  },
+  "9530ec35": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s2-bugfix",
+    "lang": "kotlin",
+    "file": "LicencaAccessValidator.kt"
+  },
+  "d02f82da": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s1-greenfield",
+    "lang": "python",
+    "file": "estoque.py"
+  },
+  "eb868bf5": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s2-bugfix",
+    "lang": "go",
+    "file": "licenca_access_validator.go"
+  },
+  "57c020de": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s1-greenfield",
+    "lang": "kotlin",
+    "file": "Estoque.kt"
+  },
+  "4b20d149": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s1-greenfield",
+    "lang": "go",
+    "file": "estoque.go"
+  },
+  "f2dcee0f": {
+    "tag": "sonnet",
+    "condition": "rule",
+    "scenario": "s3-infested",
+    "lang": "kotlin",
+    "file": "CupomService.kt"
+  }
+}

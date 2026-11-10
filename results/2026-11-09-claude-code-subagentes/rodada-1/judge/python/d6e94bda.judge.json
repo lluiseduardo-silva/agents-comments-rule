@@ -1,0 +1,54 @@
+{
+  "id": "d6e94bda",
+  "prose_language": "pt",
+  "idiomatic_format": true,
+  "targets": [
+    {
+      "name": "aplicar",
+      "found": true,
+      "has_doc": true,
+      "summary_states_behavior": false,
+      "params_documented": 0,
+      "return_documented": false,
+      "errors_documented": 0,
+      "mutation": "absent",
+      "mutation_complete": false,
+      "partial_failure_documented": false,
+      "narrative": [
+        {
+          "category": "emphasis",
+          "text": "⚠ **NÃO remover o limite.**"
+        },
+        {
+          "category": "history",
+          "text": "Antes do PR 2291 dava para empilhar cupom à vontade e o Financeiro reclamou do prejuízo em novembro."
+        },
+        {
+          "category": "attribution",
+          "text": "A Carla decidiu travar pelo `max_cupons_por_pedido` em vez de validar no front, que era a outra opção discutida."
+        },
+        {
+          "category": "attribution",
+          "text": "# Limite pedido pelo Financeiro"
+        }
+      ],
+      "inline_comments": 1,
+      "doc_lines": 5
+    },
+    {
+      "name": "remover",
+      "found": true,
+      "has_doc": false,
+      "summary_states_behavior": false,
+      "params_documented": 0,
+      "return_documented": false,
+      "errors_documented": 0,
+      "mutation": "absent",
+      "mutation_complete": false,
+      "partial_failure_documented": false,
+      "narrative": [],
+      "inline_comments": 0,
+      "doc_lines": 0
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "b57a5629",
+  "language": "Go",
+  "file": "b57a5629.go",
+  "targets": [
+    {
+      "name": "canUpload",
+      "kind": "function",
+      "params": [
+        "venda",
+        "userId"
+      ],
+      "returns": true,
+      "errors": [],
+      "mutates": [],
+      "partial_failure": false
+    },
+    {
+      "name": "canAccessAfterCancel",
+      "kind": "function",
+      "params": [
+        "venda",
+        "userId"
+      ],
+      "returns": true,
+      "errors": [],
+      "mutates": [],
+      "partial_failure": false
+    },
+    {
+      "name": "requireUpload",
+      "kind": "function",
+      "params": [
+        "venda",
+        "userId"
+      ],
+      "returns": false,
+      "errors": [
+        "UploadNaoPermitido quando canUpload é falso"
+      ],
+      "mutates": [],
+      "partial_failure": false
+    },
+    {
+      "name": "UploadNaoPermitido",
+      "kind": "type"
+    }
+  ]
+}
